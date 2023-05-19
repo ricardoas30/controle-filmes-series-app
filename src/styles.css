@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Estilo carrosel */
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+/* Fim */
