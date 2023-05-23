@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import * as $ from 'jquery';
 import * as M from 'materialize-css';
 
@@ -7,12 +7,6 @@ import * as M from 'materialize-css';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
-  @ViewChild('mobile') sideNav?: ElementRef;
-
+export class AppComponent {
   title = 'filmes-series-app';
-
-  ngAfterViewInit(): void {
-    M.Sidenav.init(this.sideNav?.nativeElement);
-  }
 }

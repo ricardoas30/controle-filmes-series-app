@@ -30,3 +30,8 @@ body {
     filter: brightness(0.9);
 }
 /* Fim */
+
+.cor-menu, .cor-footer, .cor-menu-lateral {
+  /* default color: #6e4bbb; */
+  background-color: #032e4b;
+}
