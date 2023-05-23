@@ -1,32 +1,9 @@
-<app-header></app-header>
+<header>
+  <app-menu></app-menu>
+</header>
 
-<div class="container">
-    <content class="px-4">
-        <div id="carrosel-filmes" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active c-item" data-bs-interval="1000">
-              <img src="../../assets/star-wars (Grande).jpg" class="d-block w-100 c-img">
-            </div>
-            <div class="carousel-item c-item" data-bs-interval="1500">
-              <img src="../../assets/homem-de-ferro (Grande).jpg" class="d-block w-100 c-img">
-            </div>
-            <div class="carousel-item c-item">
-              <img src="../../assets/arlequina (Grande).jpg" class="d-block w-100 c-img">
-            </div>
-            <div class="carousel-item c-item">
-              <img src="../../assets/elsa (Grande).jpg" class="d-block w-100 c-img">
-            </div>      
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carrosel-filmes" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carrosel-filmes" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </content>
-</div>
+<main>
+  	<router-outlet></router-outlet>
+</main>
 
 <app-footer></app-footer>
