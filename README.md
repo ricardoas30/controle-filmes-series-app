@@ -42,18 +42,22 @@ As seguintes ferramentas deverão ser usadas na construção do projeto:
 Para rodar o projeto em ambiente web, execute o seguinte comando
 
 ```bash
-  npm serve --open
+  ng serve --open
 ```
 
 ## Screenshots
 
-![Login](https://user-images.githubusercontent.com/14126452/237776200-eaeaeb6f-bc60-409a-974f-3c4ff9ba55c1.png)
+#### Login
+![Login](https://user-images.githubusercontent.com/14126452/240376901-9b50c771-51da-4f2b-9d64-453077b5bde2.png)
 
-![Dashboard](https://user-images.githubusercontent.com/14126452/237776198-c0d65f6a-f588-49a2-8683-fe7ff85f6a18.png)
+#### Dashboard
+![Dashboard](https://user-images.githubusercontent.com/14126452/240376921-71b93638-9270-4421-9f1e-8fcce4a8650a.png)
 
-![Cadastro](https://user-images.githubusercontent.com/14126452/237776196-265a60b1-cad3-4930-9c38-887235ed75a6.png)
+#### Cadastro
+![Cadastro](https://user-images.githubusercontent.com/14126452/240382749-8daf1703-5e63-4de9-987e-97698585a5de.png)
 
-![Sobre](https://user-images.githubusercontent.com/14126452/237776193-db11c6a2-632a-4d87-8c31-a589489dbe10.png)
+#### Sobre
+![Sobre](https://user-images.githubusercontent.com/14126452/240376911-e91a699d-f88c-4d27-b20c-6faa9b91a779.png)
 
 
 ## Aprendizados
@@ -74,4 +78,3 @@ Formação superior em Redes de computadores, especialista em redes de computado
 ## Feedback
 
 Se você tiver algum feedback, por favor, deixe uma mensagem ricardoas30@gmail.com
-
