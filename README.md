@@ -47,12 +47,16 @@ Para rodar o projeto em ambiente web, execute o seguinte comando
 
 ## Screenshots
 
+#### Login
 ![Login](https://user-images.githubusercontent.com/14126452/240376901-9b50c771-51da-4f2b-9d64-453077b5bde2.png)
 
+#### Dashboard
 ![Dashboard](https://user-images.githubusercontent.com/14126452/240376921-71b93638-9270-4421-9f1e-8fcce4a8650a.png)
 
-![Cadastro](https://user-images.githubusercontent.com/14126452/240376912-5e964295-6083-46aa-a342-f5bc3a1ca61e.png)
+#### Cadastro
+![Cadastro](https://user-images.githubusercontent.com/14126452/240382749-8daf1703-5e63-4de9-987e-97698585a5de.png)
 
+#### Sobre
 ![Sobre](https://user-images.githubusercontent.com/14126452/240376911-e91a699d-f88c-4d27-b20c-6faa9b91a779.png)
 
 
