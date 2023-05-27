@@ -1,5 +1,4 @@
 import { AfterViewInit, Component } from '@angular/core';
-// import * as $ from 'jquery';
 import * as M from 'materialize-css';
 
 @Component({
@@ -9,7 +8,18 @@ import * as M from 'materialize-css';
 })
 export class MenuComponent implements AfterViewInit {
 
-  titulo:string = 'Filmes e Series';
+
+  dados = {
+    titulo:'Filmes e Series',
+    home: {
+      nome: 'Home',
+      url: '/home'
+    },
+    sobre: {
+      nome: 'Sobre',
+      url: '/sobre'
+    }
+  };
 
   ngAfterViewInit(): void {
       document.addEventListener('DOMContentLoaded', function() {
