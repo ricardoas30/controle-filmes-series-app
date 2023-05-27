@@ -2,36 +2,15 @@
 @import "~materialize-css/dist/css/materialize.css";
 @import "~material-icons/iconfont/material-icons.css";
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-  }
-
-/* Estilo carrosel */
-.c-item {
-    height: 480px;
+main {
+  display: flex;
+  min-height: 65.8vh;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
-
-.c-img {
-    height: auto;
-    object-fit: cover;
-    filter: brightness(0.9);
-}
-/* Fim */
-
 .cor-menu, .cor-footer, .cor-menu-lateral {
-  /* default color: #6e4bbb; */
   background-color: #032e4b;
+}
+.tamanho-img {
+  height: 400px;
 }

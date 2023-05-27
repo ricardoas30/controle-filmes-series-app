@@ -8,6 +8,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { MenuComponent } from './layout/menu/menu.component';
 import { SobreComponent } from './layout/sobre/sobre.component';
 import { MenuLateralComponent } from './layout/menu-lateral/menu-lateral.component';
+import { CardComponent } from './layout/card/card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MenuLateralComponent } from './layout/menu-lateral/menu-lateral.compone
     FooterComponent,
     MenuComponent,
     SobreComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
