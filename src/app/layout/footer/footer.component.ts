@@ -10,7 +10,7 @@ export class FooterComponent {
   dados = {
     nome_app: 'Filmes App',
     nome_projeto: 'Projetos',
-    copyright: '© Todos os direitos reservados',
+    copyright: 'Copyright©2023, Controle de Filmes e Séries App',
     home: {
       nome: 'Home',
       url: '/home'

@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col l4 m6 s12" *ngFor="let filme of filmes">
             <div class="container">
@@ -17,6 +17,42 @@
                         <span class="card-title grey-text text-darken-4">{{filme.titulo}} - {{filme.ano}}<i class="material-icons right">close</i></span>
                         <p>{{filme.sinopse}}</p>
                         <p>{{filme.assistido}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col l4 m6 s12" *ngFor="let filme of filmes">
+            <div class="container">
+                <div class="card z-depth-5">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator tamanho-img" [src]="filme.img">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            <i class="tiny material-icons left" *ngIf="filme.assistido" style="margin-right: 2px;">star</i>
+                            <i class="tiny material-icons left" *ngIf="!filme.assistido" style="margin-right: 2px;">star_border</i>
+                            {{filme.titulo}}<i class="material-icons right">more_vert</i>
+                            
+                            <p style="text-align: right; font-size: 11px;">
+                                {{filme.genero}} | {{filme.ano}} | {{filme.pais}}
+                            </p>
+                            
+                        </span>
+                        <p style="text-align: right; font-size: 12px;"><a href="#">Editar</a> | <a href="#">Deletar</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{{filme.titulo}}<i class="material-icons right">close</i></span>
+                        <p style="text-align: justify; font-size: 13px;">{{filme.sinopse}}</p>
+                        <p style="text-align: right; font-size: 14px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                            <i class="tiny material-icons right" *ngIf="filme.assistido">star</i>
+                            <i class="tiny material-icons right" *ngIf="!filme.assistido">star_border</i>
+                            {{filme.genero}} | {{filme.ano}} | {{filme.pais}}
+                        </p>
                     </div>
                 </div>
             </div>
