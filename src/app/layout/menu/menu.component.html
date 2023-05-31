@@ -1,15 +1,16 @@
 <div class="navbar-fixed">
     <nav class="cor-menu">
-        <div class="container nav-wrapper">
-            <a [routerLink]="[dados.home.url]" class="brand-logo">
+        
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="container nav-wrapper hide-on-small-only hide-on-med-only">
+            <a [routerLink]="[dados.home.url]" class="brand-logo left" style="font-size: large;">{{dados.titulo}}
                 <i class="large material-icons">home</i>
             </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a [routerLink]="[dados.home.url]">{{dados.home.nome}}</a></li>
-                    <li><a [routerLink]="[dados.sobre.url]">{{dados.sobre.nome}}</a></li>
-                </ul>
+            
+            <ul class="right hide-on-med-and-down">
+                <li><a [routerLink]="[dados.home.url]">{{dados.home.nome}}</a></li>
+                <li><a [routerLink]="[dados.sobre.url]">{{dados.sobre.nome}}</a></li>
+            </ul>
         </div>
     </nav>
 </div>
-
