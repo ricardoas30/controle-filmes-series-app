@@ -4,9 +4,10 @@ import { SobreComponent } from './layout/sobre/sobre.component';
 import { CardComponent } from './layout/card/card.component';
 
 const routes: Routes = [
-  {path: '', component: CardComponent},
+  
   {path: 'sobre', component: SobreComponent},
-  {path: 'home', component: CardComponent}
+  {path: 'home', component: CardComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
