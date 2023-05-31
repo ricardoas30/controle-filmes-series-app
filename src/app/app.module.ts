@@ -9,6 +9,7 @@ import { MenuComponent } from './layout/menu/menu.component';
 import { SobreComponent } from './layout/sobre/sobre.component';
 import { MenuLateralComponent } from './layout/menu-lateral/menu-lateral.component';
 import { CardComponent } from './layout/card/card.component';
+import { SobreItemComponent } from './sobre-item/sobre-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardComponent } from './layout/card/card.component';
     MenuComponent,
     SobreComponent,
     MenuLateralComponent,
-    CardComponent
+    CardComponent,
+    SobreItemComponent
   ],
   imports: [
     BrowserModule,

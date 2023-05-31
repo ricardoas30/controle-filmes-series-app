@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
+import { SobreItemComponent } from 'src/app/sobre-item/sobre-item.component';
 
 @Component({
   selector: 'app-sobre',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sobre.component.css']
 })
 export class SobreComponent {
+
+  @ViewChild(SobreItemComponent) sobre!: SobreItemComponent;
 
 }
