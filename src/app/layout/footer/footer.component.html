@@ -4,8 +4,8 @@
             <div class="col l6 s12">
                 <h5 class="white-text">{{dados.nome_app}}</h5>
                 <ul class="left-align">
-                    <li><a class="grey-text text-lighten-3" [href]="dados.home.url"><i class="tiny material-icons">home</i>{{dados.home.nome}}</a></li>
-                    <li><a class="grey-text text-lighten-3" [href]="dados.sobre.url"><i class="tiny material-icons">help</i>{{dados.sobre.nome}}</a></li>
+                    <li><a class="grey-text text-lighten-3" [routerLink]="[dados.home.url]"><i class="tiny material-icons">home</i>{{dados.home.nome}}</a></li>
+                    <li><a class="grey-text text-lighten-3" [routerLink]="[dados.sobre.url]"><i class="tiny material-icons">help</i>{{dados.sobre.nome}}</a></li>
                 </ul>
             </div>
             <div class="col l4 offset-l2 s12">
