@@ -41,9 +41,15 @@
                             <p style="text-align: right; font-size: 11px;">
                                 {{filme.genero}} | {{filme.ano}} | {{filme.pais}}
                             </p>
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0" src="../../../assets/logo_classificacao/livre-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 10" src="../../../assets/logo_classificacao/10-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 12" src="../../../assets/logo_classificacao/12-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 14" src="../../../assets/logo_classificacao/14-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 16" src="../../../assets/logo_classificacao/16-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="../../../assets/logo_classificacao/18-anos.png">
                             
                         </span>
-                        <p style="text-align: right; font-size: 12px;"><a [routerLink]="['']">Editar</a> | <a [routerLink]="['']">Deletar</a></p>
+                        <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']">Deletar</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">{{filme.titulo}}<i class="material-icons right">close</i></span>
