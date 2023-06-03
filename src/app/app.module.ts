@@ -10,6 +10,7 @@ import { SobreComponent } from './layout/sobre/sobre.component';
 import { MenuLateralComponent } from './layout/menu-lateral/menu-lateral.component';
 import { CardComponent } from './layout/card/card.component';
 import { SobreItemComponent } from './sobre-item/sobre-item.component';
+import { CardDetailComponent } from './layout/card-detail/card-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SobreItemComponent } from './sobre-item/sobre-item.component';
     SobreComponent,
     MenuLateralComponent,
     CardComponent,
-    SobreItemComponent
+    SobreItemComponent,
+    CardDetailComponent
   ],
   imports: [
     BrowserModule,
