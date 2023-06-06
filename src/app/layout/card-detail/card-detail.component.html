@@ -7,3 +7,86 @@
 </div>
 
 
+
+
+
+<div class="container">
+  <div class="card z-deph-5">
+
+    <div class="card-content">
+<div class="row">
+    <form class="col l6 s12">
+      <div class="row">
+        <div class="input-field col l6 s6">
+            <i class="material-icons prefix">local_movies</i>
+            <input id="titulo" name="titulo" type="text" class="validate" required>
+            <label for="titulo">Título</label>
+            <span class="helper-text" data-error="Atenção! começe o título do filme com letras maiúsculas." data-success="Valor válido"></span>
+        </div>
+        <div class="input-field col l6 s6">
+            <i class="material-icons prefix">today</i>
+            <input id="ano" name="ano" type="number" class="validate" pattern="^[12][0-9]{3}$" required>
+            <label for="ano">Ano</label>
+            <span class="helper-text" data-error="Atenção! digite o ano do filme corretamente." data-success="Valor válido"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l6">
+            <select>
+                <option value="" disabled selected>Selecione</option>
+                <option value="0" data-icon="../../../assets/logo_classificacao/livre-anos.png" class="left">Classificação Livre</option>
+                <option value="10" data-icon="../../../assets/logo_classificacao/10-anos.png" class="left">Classificação 10 anos</option>
+                <option value="12" data-icon="../../../assets/logo_classificacao/12-anos.png" class="left">Classificação 12 anos</option>
+                <option value="14" data-icon="../../../assets/logo_classificacao/14-anos.png" class="left">Classificação 14 anos</option>
+                <option value="16" data-icon="../../../assets/logo_classificacao/16-anos.png" class="left">Classificação 16 anos</option>
+                <option value="18" data-icon="../../../assets/logo_classificacao/18-anos.png" class="left">Classificação 18 anos</option>
+            </select>
+            <label>Classificação Etária</label>
+        </div>
+        <div class="switch col l6 s12">
+            <label>Assistiu ao filme ?</label>
+            <label>
+                Não
+                <input type="checkbox">
+                <span class="lever"></span>
+                Sim
+            </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l12 s12">
+          <textarea id="sinopse" class="materialize-textarea"></textarea>
+          <label for="sinopse">Sinópse</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col l12 s12">
+            <select multiple>
+              <!-- <option value="" disabled selected>Selecione</option> -->
+              <option value="1">Ação</option>
+              <option value="2">Aventura</option>
+              <option value="3">Suspense</option>
+              <option value="4">Ficção</option>
+              <option value="5">Drama</option>
+              <option value="6">Terror</option>
+              <option value="7">Comédia</option>
+              <option value="8">Romance</option>
+              <option value="9">Documentário</option>
+            </select>
+            <label>Gênero</label>
+          </div>
+      </div>
+        <button class="col l4 btn red lighten-2 waves-effect waves-light" type="reset">Limpar
+          <i class="material-icons right">clear</i>
+        </button> 
+        <button class="col l4 btn waves-effect waves-light" type="submit">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      
+
+
+    </form>
+  </div>
+    </div>
+  </div>
+</div>
