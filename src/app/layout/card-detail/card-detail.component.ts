@@ -21,14 +21,6 @@ export class CardDetailComponent implements OnInit {
     this.filme = filmes.find(
       (filme) => filme.id === filmesIdFromRoute
     );
-
-    // Inicializando SELECT (Combobox)
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('select');
-      var instances = M.FormSelect.init(elems);
-    });
-
-    
   }
 }
 

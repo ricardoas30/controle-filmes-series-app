@@ -11,6 +11,10 @@ export class MenuComponent implements AfterViewInit {
 
   dados = {
     titulo:'Filmes e Series',
+    cadastrar: {
+      nome: 'Cadastrar',
+      url: '/cadastro'
+    },
     home: {
       nome: 'Home',
       url: '/home'

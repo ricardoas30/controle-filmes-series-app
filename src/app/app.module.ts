@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { MenuLateralComponent } from './layout/menu-lateral/menu-lateral.compone
 import { CardComponent } from './layout/card/card.component';
 import { SobreItemComponent } from './sobre-item/sobre-item.component';
 import { CardDetailComponent } from './layout/card-detail/card-detail.component';
+import { CardCadastroComponent } from './layout/card-cadastro/card-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { CardDetailComponent } from './layout/card-detail/card-detail.component'
     MenuLateralComponent,
     CardComponent,
     SobreItemComponent,
-    CardDetailComponent
+    CardDetailComponent,
+    CardCadastroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

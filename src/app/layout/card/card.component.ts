@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Filme, filmes } from '../filme.model';
+import { filmes } from '../filme.model';
 
 @Component({
   selector: 'app-card',
@@ -9,5 +9,5 @@ import { Filme, filmes } from '../filme.model';
 export class CardComponent {
 
   filmes = [...filmes];
-  
+
 }
