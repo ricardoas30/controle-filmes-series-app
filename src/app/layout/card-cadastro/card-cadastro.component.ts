@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Filme } from 'src/app/model/filme';
 import { ActivatedRoute, Router } from '@angular/router';
 
+declare let alertify : any;
+alertify.set('notifier','position', 'top-right');
+
 @Component({
   selector: 'app-card-cadastro',
   templateUrl: './card-cadastro.component.html',
@@ -21,6 +24,9 @@ constructor(private route: ActivatedRoute, router: Router){
       var elems = document.querySelectorAll('select');
       var instances = M.FormSelect.init(elems);
     });
+
+    
+    
   }
 
   filme = {
@@ -39,5 +45,7 @@ constructor(private route: ActivatedRoute, router: Router){
     let json = JSON.stringify(filme);
     localStorage['filmes'] = json;
     this.router.navigate(['/home'], { relativeTo: this.route.parent });
+
+    alertify.success('Cadastrado com Sucesso!');
   }
 }
