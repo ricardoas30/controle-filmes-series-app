@@ -1,10 +1,11 @@
 <div class="container">
     <div class="row">
-        <div class="col l4 m6 s12" *ngFor="let filme of filmes">
+        <div class="col l4 m6 s12" *ngFor="let filme of filmeList">
             <div class="container">
                 <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator tamanho-img" [src]="filme.img">
+                        <img class="activator tamanho-img" [src]="filme.img" *ngIf="filme.img">
+                        <img class="activator tamanho-img" src="../../../assets/filmes/sem-imagem.gif" *ngIf="!filme.img">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">

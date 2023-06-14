@@ -29,20 +29,26 @@ As seguintes ferramentas deverão ser usadas na construção do projeto:
 - [x]  Passar dados entre componentes que representam diferentes telas via parâmetros de rotas. 
 - [x]  Validar campos do formulário com REGEX e apresentar os erros.
 - [x]  Desabilitar o botão de submit enquanto o formulário está inválido.
-- [ ]  Fazer requisições a API com tratamento da resposta com Promises ou Observables.
-- [ ]  Cadastrar uma entidade usando uma API (JSON Server).
-- [ ]  Apresentar uma lista de dados com a diretiva estrutural ngFor.
-- [ ]  Usar a diretiva ngIf
+- [x]  Fazer requisições a API com tratamento da resposta com Promises ou Observables.
+- [x]  Cadastrar uma entidade usando uma API (JSON Server).
+- [x]  Apresentar uma lista de dados com a diretiva estrutural ngFor.
+- [x]  Usar a diretiva ngIf
 - [ ]  Formatar a apresentação de dados com Pipes.
 - [ ]  Build e deploy da aplicação.
 
 
 ## Executando o Projeto
 
-Para rodar o projeto em ambiente web, execute o seguinte comando
+Para rodar o projeto em ambiente web, execute o seguinte comando no terminal
 
 ```bash
   ng serve --open
+```
+
+Executar a API Json Server, rode o seguinte comando no terminal
+
+```bash
+  json-server --watch .\src\app\db.json
 ```
 
 ## Screenshots

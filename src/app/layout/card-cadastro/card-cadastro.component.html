@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col l8 s12">
+                    <div class="input-field col l4 s12">
                         <select multiple name="genero" [ngModel]="filme.genero" required>
                             <!-- <option value="" disabled selected>Selecione</option> -->
                             <option value="Ação">Ação</option>
@@ -59,7 +59,20 @@
                         </select>
                     <label>Gênero</label>
                     </div>
-                </div>
+                    <div class="input-field col l4 s12">
+                        <select multiple name="pais" [ngModel]="filme.pais" required>
+                            <!-- <option value="" disabled selected>Selecione</option> -->
+                            <option value="EUA">Estados Unidos (EUA)</option>
+                            <option value="Reino Unido">Reino Unido</option>
+                            <option value="França">França</option>
+                            <option value="Itália">Itália</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="India">India</option>
+                            <option value="Espanha">Espanha</option>
+                        </select>
+                    <label>País</label>
+                    </div> 
+                </div>                 
                 <div class="row">
                     <div class="file-field input-field col l8 s12">
                         <div class="btn">

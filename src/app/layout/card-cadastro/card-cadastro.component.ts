@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Filme } from 'src/app/model/filme';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ApiHttpService } from 'src/app/services/api-http.service';
 
 declare let alertify : any;
 alertify.set('notifier','position', 'top-right');
@@ -14,7 +15,8 @@ export class CardCadastroComponent implements OnInit {
 
 router: Router;
 
-constructor(private route: ActivatedRoute, router: Router){
+constructor(private route: ActivatedRoute, router: Router,
+            private apiHttpService: ApiHttpService){
   this.router = router;
 }
 
@@ -36,16 +38,17 @@ constructor(private route: ActivatedRoute, router: Router){
     assistido: false,
     sinopse: null,
     genero: null,
+    pais: null,
     img: null
   }
 
   onSubmitCadastro(filme: any) {
-    console.log(filme);
-    // Atividade 11 - Cadastro e validação de formulário
-    let json = JSON.stringify(filme);
-    localStorage['filmes'] = json;
+    this.apiHttpService.create(filme).subscribe((Response) => {
+      this.apiHttpService.list();
+      alertify.success('Gravado com Sucesso.');
+    },(error => {
+      alertify.error('Erro ao gravar o registro, verifique sua conexão.');
+    }));
     this.router.navigate(['/home'], { relativeTo: this.route.parent });
-
-    alertify.success('Cadastrado com Sucesso!');
   }
 }
