@@ -24,7 +24,7 @@
                             <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="../../../assets/logo_classificacao/18-anos.png">
                             
                         </span>
-                        <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']">Deletar</a></p>
+                        <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']" (click)="onConfirmDelete([filme.id])">Deletar</a></p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">{{filme.titulo}}<i class="material-icons right">close</i></span>

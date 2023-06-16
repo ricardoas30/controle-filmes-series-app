@@ -11,6 +11,7 @@ const routes: Routes = [
   {path: 'home', component: CardComponent},
   {path: 'cadastro', component: CardCadastroComponent},
   {path: 'filme/:id', component: CardDetailComponent},
+  {path: 'delete/:id', component: CardComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 

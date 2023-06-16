@@ -1,6 +1,6 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, catchError, pipe, retry, throwError } from 'rxjs';
+import { Observable, catchError, throwError } from 'rxjs';
 import { Filme } from '../model/filme';
 
 @Injectable({
@@ -20,7 +20,7 @@ export class ApiHttpService {
       )
   }
 
-  // Read
+  // Listar todos
   list() {
     return this.http.get<Filme>(`${this.url_api}`)
       .pipe(
@@ -28,25 +28,25 @@ export class ApiHttpService {
       );
   }
 
-  // Delete
-  // delete(id: Filme): Observable<Filme> {
-  //   var API_URL = `${this.url_api}/${id}`;
-  //   return this.http.delete(API_URL)
-  //     .pipe(
-  //       catchError(this.handleError)
-  //     );
-  // }
+  // Deletar
+  delete(id: any): Observable<any> {
+    var API_URL = `${this.url_api}/${id}`;
+    return this.http.delete(API_URL)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
 
-  // Handle API errors
+  // Lidar com erros de API
   handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
-      console.error('An error occurred:', error.error.message);
+      console.error('Um erro ocorreu:', error.error.message);
     } else {
       console.error(
-        `Backend returned code ${error.status}, ` +
-        `body was: ${error.error}`);
+        `Código retornado do back-end ${error.status}, ` +
+        `corpo era: ${error.error}`);
     }
     return throwError(
-      'Something bad happened; please try again later.');
+      'Algo ruím aconteceu; por favor, tente novamente mais tarde.');
   };
 }
