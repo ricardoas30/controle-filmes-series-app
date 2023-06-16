@@ -14,7 +14,7 @@
                             {{filme.titulo}}<i class="material-icons right">more_vert</i>
                             
                             <p style="text-align: right; font-size: 11px;">
-                                {{filme.genero}} | {{filme.ano}} | {{filme.pais}}
+                                {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                             </p>
                             <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0" src="../../../assets/logo_classificacao/livre-anos.png">
                             <img class="classificacao-indicativa" *ngIf="filme.classificacao == 10" src="../../../assets/logo_classificacao/10-anos.png">
@@ -32,7 +32,7 @@
                         <p style="text-align: right; font-size: 14px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
                             <i class="tiny material-icons right" *ngIf="filme.assistido">star</i>
                             <i class="tiny material-icons right" *ngIf="!filme.assistido">star_border</i>
-                            {{filme.genero}} | {{filme.ano}} | {{filme.pais}}
+                            {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                         </p>
                     </div>
                 </div>

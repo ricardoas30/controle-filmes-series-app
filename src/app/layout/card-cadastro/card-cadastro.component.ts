@@ -14,6 +14,7 @@ alertify.set('notifier','position', 'top-right');
 export class CardCadastroComponent implements OnInit {
 
 router: Router;
+date = new Date();
 
 constructor(private route: ActivatedRoute, router: Router,
             private apiHttpService: ApiHttpService){
@@ -39,10 +40,11 @@ constructor(private route: ActivatedRoute, router: Router,
     sinopse: null,
     genero: null,
     pais: null,
-    img: null
+    img: null,
+    createdAt: this.date
   }
 
-  onSubmitCadastro(filme: any) {
+  onSubmitCadastro(filme: Filme) {
     this.apiHttpService.create(filme).subscribe((Response) => {
       this.apiHttpService.list();
       alertify.success('Gravado com Sucesso.');
