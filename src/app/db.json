@@ -2,7 +2,7 @@
   "filmes": [
     {
       "id": 1,
-      "titulo": "Babilônia",
+      "titulo": "babilônia",
       "assistido": true,
       "ano": 2022,
       "genero": [
@@ -17,7 +17,7 @@
     },
     {
       "id": 2,
-      "titulo": "Velozes e Furiosos 10",
+      "titulo": "velozes e furiosos 10",
       "assistido": false,
       "ano": 2023,
       "genero": [
@@ -33,7 +33,7 @@
     },
     {
       "id": 3,
-      "titulo": "A Mãe",
+      "titulo": "a mãe",
       "assistido": true,
       "ano": 2023,
       "genero": [
@@ -49,7 +49,7 @@
     },
     {
       "id": 4,
-      "titulo": "Avatar II",
+      "titulo": "avatar II",
       "assistido": true,
       "ano": 2022,
       "genero": [
@@ -64,7 +64,7 @@
     },
     {
       "id": 5,
-      "titulo": "Guardiões da Galáxia III",
+      "titulo": "guardiões da galáxia III",
       "assistido": false,
       "ano": 2023,
       "genero": [
@@ -80,7 +80,7 @@
     },
     {
       "id": 6,
-      "titulo": "Emancipação",
+      "titulo": "emancipação",
       "assistido": true,
       "ano": 2022,
       "genero": [

@@ -6,9 +6,9 @@
                 <div class="row">
                     <h5>Cadastrar Filmes</h5>
                     <div class="input-field col l4 s6">
-                        <input id="titulo" name="titulo" [ngModel]="filme.titulo" type="text" class="validate"  pattern="[A-Z][a-zA-Z\d ]{0,27}" required>
+                        <input id="titulo" name="titulo" [ngModel]="filme.titulo" type="text" class="validate"  pattern="[a-z][a-zA-Z\d ]{0,27}" required>
                         <label for="titulo">Título</label>
-                        <span class="helper-text" data-error="Atenção! primeira letra maiúscula e valor máximo de 27 letras." data-success="Título válido"></span>
+                        <span class="helper-text" data-error="Atenção! Valor máximo de 27 letras." data-success="Título válido"></span>
                     </div>
                     <div class="input-field col l4 s6">
                         <input id="ano" name="ano" [ngModel]="filme.ano" type="text" class="validate" pattern="^[12][0-9]{3}$" required>

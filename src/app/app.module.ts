@@ -14,6 +14,7 @@ import { CardComponent } from './layout/card/card.component';
 import { SobreItemComponent } from './sobre-item/sobre-item.component';
 import { CardDetailComponent } from './layout/card-detail/card-detail.component';
 import { CardCadastroComponent } from './layout/card-cadastro/card-cadastro.component';
+import {NgPipesModule} from 'ngx-pipes';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CardCadastroComponent } from './layout/card-cadastro/card-cadastro.comp
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgPipesModule
 
   ],
   providers: [],
