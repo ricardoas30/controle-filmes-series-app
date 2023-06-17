@@ -2,7 +2,6 @@
     <div class="row"></div>
         <div class="row">
             <form class="col l12 s12 push-l2" #cadForm="ngForm" (ngSubmit)="onSubmitCadastro(cadForm.value)">
-                <input type="hidden" name="createdAt" [ngModel]="filme.createdAt">
                 <div class="row">
                     <h5>Cadastrar Filmes</h5>
                     <div class="input-field col l4 s6">
@@ -97,6 +96,7 @@
                         </button>
                     </div>
                 </div>
+                <input type="hidden" name="createdAt" [ngModel]="filme.createdAt">
             </form>
         </div>
     <div class="row"></div>

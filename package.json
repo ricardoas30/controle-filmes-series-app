@@ -1,10 +1,12 @@
 {
   "name": "filmes-series-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=/filmes-series-app/ --source-map",
+    "ghpages": "angular-cli-ghpages --dir=dist/filmes-series-app",
+    "deploy": "npm run build & npm run ghpages",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -19,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
     "alertifyjs": "^1.13.1",
+    "angular-cli-ghpages": "^1.0.6",
     "cloudinary": "^1.37.0",
     "jquery": "^3.7.0",
     "material-icons": "^1.13.6",

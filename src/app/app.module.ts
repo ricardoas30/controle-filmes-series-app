@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { HeaderComponent } from './header_old/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MenuComponent } from './layout/menu/menu.component';
 import { SobreComponent } from './layout/sobre/sobre.component';
@@ -19,7 +18,6 @@ import {NgPipesModule} from 'ngx-pipes';
 @NgModule({
   declarations: [
     AppComponent,
-    // HeaderComponent,
     FooterComponent,
     MenuComponent,
     SobreComponent,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Filme } from 'src/app/model/filme';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiHttpService } from 'src/app/services/api-http.service';
+import * as M from 'materialize-css';
 
 declare let alertify : any;
 alertify.set('notifier','position', 'top-right');
@@ -22,14 +23,8 @@ constructor(private route: ActivatedRoute, router: Router,
 }
 
   ngOnInit() {
-    // Inicializando SELECT (Combobox)
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('select');
-      var instances = M.FormSelect.init(elems);
-    });
-
-    
-    
+    // inicializar todos os Componentes do Materialize
+    M.AutoInit();
   }
 
   filme = {
