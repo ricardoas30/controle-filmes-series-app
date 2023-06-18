@@ -21,31 +21,38 @@ export class ApiHttpService {
       )
   }
 
-  // Listar todos
-  list() {
-    let API_URL = `${this.url_api}${this.options}`;
-    return this.http.get<Filme>(API_URL)
+  // Buscar o filme pelo id
+  updateById(id: Filme, data: Filme): Observable<Filme> {
+    let API_URL = `${this.url_api}/${id}`;
+    return this.http.put<Filme>(API_URL, data)
       .pipe(
         catchError(this.handleError)
       );
   }
 
-  // Filme por id
-  filmeById(id: Filme): Observable<Filme> {
-    var API_URL = `${this.url_api}/${id}`;
-    return this.http.get<Filme>(API_URL)
+  // Listar todos
+  list() {
+    return this.http.get<Filme>(`${this.url_api}${this.options}`)
       .pipe(
         catchError(this.handleError)
       );
   }
 
   // Deletar
-  delete(id: any): Observable<any> {
+  delete(id: Filme): Observable<Filme> {
     var API_URL = `${this.url_api}/${id}`;
-    return this.http.delete(API_URL)
+    return this.http.delete<Filme>(API_URL)
       .pipe(
         catchError(this.handleError)
       );
+  }
+
+  filmeById(id: Filme): Observable<Filme> {
+    var API_URL = `${this.url_api}/${id}`;
+    return this.http.get<Filme>(API_URL)
+      .pipe(
+        catchError(this.handleError)
+      )
   }
 
   // Lidar com erros de API

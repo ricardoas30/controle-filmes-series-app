@@ -1,7 +1,103 @@
-<div class="container">
-    <h5>Detalhe do Filme</h5>
-    <div *ngIf="filme">
-        <p>{{filme.titulo}}</p>
-        <p>{{filme.ano}}</p>
-    </div>
+<div class="container contact">
+    <div class="row"></div>
+        <div class="row">
+            <form class="col l12 s12 push-l2" #altForm="ngForm" (ngSubmit)="onSubmitAlterar(altForm.value)">
+                <input type="hidden" name="createdAt" [ngModel]="filme?.createdAt">
+                <input type="hidden" name="updatedAt" [ngModel]="today | date:'medium'">
+                <div class="row">
+                    <h5>Alterar Filme</h5>
+                    <div class="input-field col l4 s6">
+                        <input id="titulo" name="titulo" [ngModel]="filme?.titulo" type="text" class="validate"  pattern="[a-zA-Z][a-zA-Z\d ]{0,27}" required>
+                        <!-- <label for="titulo">Título</label> -->
+                        <span class="helper-text" data-error="Atenção! Valor máximo de 27 letras." data-success="Título válido"></span>
+                    </div>
+                    <div class="input-field col l4 s6">
+                        <input id="ano" name="ano" [ngModel]="filme?.ano" type="text" class="validate" pattern="^[12][0-9]{3}$" required>
+                        <!-- <label for="ano">Ano</label> -->
+                        <span class="helper-text" data-error="Atenção! digite o ano do filme corretamente." data-success="Ano válido"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l4">
+                        <select id="classificacao" name="classificacao" [ngModel]="filme?.classificacao" required>
+                            <option value="0" data-icon="../../../assets/logo_classificacao/livre-anos.png" class="left">Livre</option>
+                            <option value="10" data-icon="../../../assets/logo_classificacao/10-anos.png" class="left">10 anos</option>
+                            <option value="12" data-icon="../../../assets/logo_classificacao/12-anos.png" class="left">12 anos</option>
+                            <option value="14" data-icon="../../../assets/logo_classificacao/14-anos.png" class="left">14 anos</option>
+                            <option value="16" data-icon="../../../assets/logo_classificacao/16-anos.png" class="left">16 anos</option>
+                            <option value="18" data-icon="../../../assets/logo_classificacao/18-anos.png" class="left">18 anos</option>
+                        </select>
+                        <label>Classificação Etária</label>
+                    </div>
+                    <div class="row col l4 m6" style="text-align: center;">
+                        <label>Assistiu ao filme?</label>
+                        <div class="switch">
+                            <label>Não<input type="checkbox" name="assistido" [ngModel]="filme?.assistido">
+                            <span class="lever">
+                            </span>Sim</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l8 s12">
+                        <textarea name="sinopse" [ngModel]="filme?.sinopse" class="materialize-textarea" required></textarea>
+                        <!-- <label for="sinopse">Sinópse</label> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l4 m6 s12">
+                        <select multiple name="genero" [ngModel]="filme?.genero" required>
+                            <!-- <option value="" disabled selected>Selecione</option> -->
+                            <option value="Ação">Ação</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Suspense">Suspense</option>
+                            <option value="Ficção">Ficção</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Comédia">Comédia</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Documentário">Documentário</option>
+                        </select>
+                    <label>Gênero</label>
+                    </div>
+                    <div class="input-field col l4 m6 s12">
+                        <select multiple name="pais" [ngModel]="filme?.pais" required>
+                            <!-- <option value="" disabled selected>Selecione</option> -->
+                            <option value="EUA">Estados Unidos (EUA)</option>
+                            <option value="Reino Unido">Reino Unido</option>
+                            <option value="França">França</option>
+                            <option value="Itália">Itália</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="India">India</option>
+                            <option value="Espanha">Espanha</option>
+                        </select>
+                    <label>País</label>
+                    </div> 
+                </div>                 
+                <div class="row">
+                    <div class="file-field input-field col l8 s12">
+                        <div class="btn">
+                            <span>arquivo</span>
+                            <input type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="imagem do seu computador ou URL da internet!">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l4 m6 s6">
+                        <button class="btn red lighten-2 waves-effect waves-light col l12 m12 s12" type="reset">Limpar
+                            <i class="material-icons right">clear</i>
+                        </button> 
+                    </div>
+                    <div class="col l4 m6 s6">
+                        <button class="btn waves-effect waves-light col l12 m12 s12" type="submit" [disabled]="!altForm.valid">Salvar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <div class="row"></div>
 </div>

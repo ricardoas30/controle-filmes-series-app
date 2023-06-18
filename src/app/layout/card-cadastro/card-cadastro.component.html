@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col l4 s12">
+                    <div class="input-field col l4 m6 s12">
                         <select multiple name="genero" [ngModel]="filme.genero" required>
                             <!-- <option value="" disabled selected>Selecione</option> -->
                             <option value="Ação">Ação</option>
@@ -59,7 +59,7 @@
                         </select>
                     <label>Gênero</label>
                     </div>
-                    <div class="input-field col l4 s12">
+                    <div class="input-field col l4 m6 s12">
                         <select multiple name="pais" [ngModel]="filme.pais" required>
                             <!-- <option value="" disabled selected>Selecione</option> -->
                             <option value="EUA">Estados Unidos (EUA)</option>
@@ -96,7 +96,7 @@
                         </button>
                     </div>
                 </div>
-                <input type="hidden" name="createdAt" [ngModel]="filme.createdAt">
+                <input type="hidden" name="createdAt" [ngModel]="date | date:'medium'">
             </form>
         </div>
     <div class="row"></div>
