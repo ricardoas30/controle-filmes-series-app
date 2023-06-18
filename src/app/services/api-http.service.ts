@@ -23,7 +23,17 @@ export class ApiHttpService {
 
   // Listar todos
   list() {
-    return this.http.get<Filme>(`${this.url_api}${this.options}`)
+    let API_URL = `${this.url_api}${this.options}`;
+    return this.http.get<Filme>(API_URL)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+  // Filme por id
+  filmeById(id: Filme): Observable<Filme> {
+    var API_URL = `${this.url_api}/${id}`;
+    return this.http.get<Filme>(API_URL)
       .pipe(
         catchError(this.handleError)
       );

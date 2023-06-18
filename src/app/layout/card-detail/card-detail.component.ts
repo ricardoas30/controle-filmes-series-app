@@ -1,6 +1,7 @@
-import { Filme, filmes } from './../filme.model';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Filme } from 'src/app/model/filme';
+import { ApiHttpService } from 'src/app/services/api-http.service';
 
 @Component({
   selector: 'app-card-detail',
@@ -10,17 +11,12 @@ import { ActivatedRoute } from '@angular/router';
 export class CardDetailComponent implements OnInit {
   filme: Filme | undefined;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private apiHttpService: ApiHttpService,
+              private route: ActivatedRoute) {}
 
   ngOnInit() {
-    // Primeiro, obtenha o ID do produto da rota atual.
-    const routeParams = this.route.snapshot.paramMap;
-    const filmesIdFromRoute = Number(routeParams.get('id'));
-
-    // Encontre o produto que corresponde ao id fornecido em route.
-    this.filme = filmes.find(
-      (filme) => filme.id === filmesIdFromRoute
-    );
+    this.apiHttpService.filmeById(this.route.snapshot.params['id'])
+        .subscribe(filme => this.filme = filme);
   }
 }
 
