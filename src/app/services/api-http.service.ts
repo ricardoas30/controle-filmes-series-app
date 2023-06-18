@@ -8,6 +8,7 @@ import { Filme } from '../model/filme';
 })
 export class ApiHttpService {
   url_api: string = 'http://localhost:3000/filmes';
+  options: string = '?_sort=id&_order=desc';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }
@@ -22,7 +23,7 @@ export class ApiHttpService {
 
   // Listar todos
   list() {
-    return this.http.get<Filme>(`${this.url_api}`)
+    return this.http.get<Filme>(`${this.url_api}${this.options}`)
       .pipe(
         catchError(this.handleError)
       );

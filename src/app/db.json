@@ -2,21 +2,19 @@
   "filmes": [
     {
       "id": 1,
-      "titulo": "transformers parte 2",
-      "ano": "2023",
-      "classificacao": "0",
-      "assistido": false,
-      "sinopse": "Durante os anos 90, uma nova facção de Transformers – os Maximals – junta-se aos Autobots como aliados na batalha pela Terra.",
+      "titulo": "babilônia",
+      "assistido": true,
+      "ano": 2022,
       "genero": [
-        "Ação",
-        "Aventura",
-        "Ficção"
+        "Drama"
       ],
+      "classificacao": 16,
+      "sinopse": "Um conto de ambições exageradas e excessos escandalosos, traçando a ascensão e queda de múltiplos personagens durante uma era de desenfreada decadência e depravação no início de Hollywood.",
       "pais": [
         "EUA"
       ],
-      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687014852/Transformers-O-Despertar-das-Feras_bez5pn.jpg",
-      "createdAt": "2023-05-10T23:10:16.010Z"
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1686676026/filme/babilonia_f7ette.webp",
+      "createdAt": "2023-05-08T23:10:16.010Z"
     },
     {
       "id": 2,
@@ -104,19 +102,21 @@
     },
     {
       "id": 7,
-      "titulo": "babilônia",
-      "assistido": true,
-      "ano": 2022,
+      "titulo": "transformers parte 2",
+      "ano": "2023",
+      "classificacao": "0",
+      "assistido": false,
+      "sinopse": "Durante os anos 90, uma nova facção de Transformers – os Maximals – junta-se aos Autobots como aliados na batalha pela Terra.",
       "genero": [
-        "Drama"
+        "Ação",
+        "Aventura",
+        "Ficção"
       ],
-      "classificacao": 16,
-      "sinopse": "Um conto de ambições exageradas e excessos escandalosos, traçando a ascensão e queda de múltiplos personagens durante uma era de desenfreada decadência e depravação no início de Hollywood.",
       "pais": [
         "EUA"
       ],
-      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1686676026/filme/babilonia_f7ette.webp",
-      "createdAt": "2023-05-08T23:10:16.010Z"
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687014852/Transformers-O-Despertar-das-Feras_bez5pn.jpg",
+      "createdAt": "2023-05-10T23:10:16.010Z"
     },
     {
       "id": 8,
@@ -149,7 +149,7 @@
       "pais": [
         "EUA"
       ],
-      "img":"https://res.cloudinary.com/du7q7wpps/image/upload/v1687043685/filme/rambo-ate-o-fim_u0dksw.jpg",
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687043685/filme/rambo-ate-o-fim_u0dksw.jpg",
       "createdAt": "2023-06-17T23:15:00.318Z"
     }
   ]
