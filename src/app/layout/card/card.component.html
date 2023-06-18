@@ -13,7 +13,7 @@
                             <i class="tiny material-icons left" *ngIf="!filme.assistido" style="margin-right: 2px;">star_border</i>
                             {{filme.titulo | ucwords}}<i class="material-icons right">more_vert</i>
                             
-                            <p style="text-align: right; font-size: 11px;">
+                            <p style="text-align: left; font-size: 11px;">
                                 {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                             </p>
                             <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0" src="../../../assets/logo_classificacao/livre-anos.png">
@@ -29,11 +29,12 @@
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">{{filme.titulo | ucwords}}<i class="material-icons right">close</i></span>
                         <p style="text-align: justify; font-size: 13px;">{{filme.sinopse}}</p>
-                        <p style="text-align: right; font-size: 14px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                        <p style="text-align: left; font-size: 12px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
                             <i class="tiny material-icons right" *ngIf="filme.assistido">star</i>
                             <i class="tiny material-icons right" *ngIf="!filme.assistido">star_border</i>
                             {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                         </p>
+                        <p style="text-align: right; font-size: xx-small;" *ngIf="filme.updatedAt">Atualizado em: {{filme.updatedAt}}</p>
                     </div>
                 </div>
             </div>

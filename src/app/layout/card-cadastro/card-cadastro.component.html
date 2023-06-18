@@ -55,6 +55,7 @@
                             <option value="Terror">Terror</option>
                             <option value="Comédia">Comédia</option>
                             <option value="Romance">Romance</option>
+                            <option value="Séries">Séries</option>
                             <option value="Documentário">Documentário</option>
                         </select>
                     <label>Gênero</label>
@@ -74,14 +75,10 @@
                     </div> 
                 </div>                 
                 <div class="row">
-                    <div class="file-field input-field col l8 s12">
-                        <div class="btn">
-                            <span>arquivo</span>
-                            <input type="file">
-                        </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" placeholder="imagem do seu computador ou URL da internet!">
-                        </div>
+                    <div class="input-field col l8 m12 s12">
+                        <input name="img" [ngModel]="filme.img" type="text" class="validate" placeholder="URL da internet" required>
+                        <!-- <label for="img">Imagem</label> -->
+                        <span class="helper-text" data-error="" data-success=""></span>
                     </div>
                 </div>
                 <div class="row">

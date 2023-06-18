@@ -26,7 +26,6 @@ export class CardComponent implements OnInit {
   listTodos() {
     this.apiHttpService.list().subscribe((response) => {
       this.filmeList = response;
-      console.log(this.filmeList);
     },(retry(3), error => {
       alertify.error('Erro ao carregar a lista de filmes.');
     }));

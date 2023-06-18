@@ -101,7 +101,8 @@
       "createdAt": "Jun 14, 2023, 11:10:00 AM"
     },
     {
-      "id": 7,
+      "createdAt": "Jun 14, 2023, 11:10:00 AM",
+      "updatedAt": "Jun 18, 2023, 3:24:48 PM",
       "titulo": "transformers parte 2",
       "ano": "2023",
       "classificacao": "0",
@@ -109,14 +110,14 @@
       "sinopse": "Durante os anos 90, uma nova facção de Transformers – os Maximals – junta-se aos Autobots como aliados na batalha pela Terra.",
       "genero": [
         "Ação",
-        "Aventura",
         "Ficção"
       ],
       "pais": [
-        "EUA"
+        "EUA",
+        "Reino Unido"
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687014852/Transformers-O-Despertar-das-Feras_bez5pn.jpg",
-      "createdAt": "Jun 14, 2023, 11:10:00 AM"
+      "id": 7
     },
     {
       "id": 8,

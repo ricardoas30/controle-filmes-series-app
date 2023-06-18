@@ -1,5 +1,5 @@
 import { Component, Input, ViewChild } from '@angular/core';
-import { SobreItemComponent } from 'src/app/sobre-item/sobre-item.component';
+import { SobreItemComponent } from 'src/app/layout/sobre-item/sobre-item.component';
 
 @Component({
   selector: 'app-sobre',
