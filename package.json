@@ -8,6 +8,7 @@
     "ghpages": "angular-cli-ghpages --no-silent --dir=dist/controle-filmes-series-app",
     "deploy": "npm run build & npm run ghpages",
     "watch": "ng build --watch --configuration development",
+    "json:server":"json-server --watch db.json",
     "test": "ng test"
   },
   "private": true,
