@@ -34,6 +34,7 @@
                             <i class="tiny material-icons right" *ngIf="!filme.assistido">star_border</i>
                             {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                         </p>
+                        <p style="text-align: right; font-size: xx-small;" *ngIf="!filme.updatedAt">Atualizado em: {{filme.updatedAt}}</p>
                         <p style="text-align: right; font-size: xx-small;" *ngIf="filme.updatedAt">Atualizado em: {{filme.updatedAt}}</p>
                     </div>
                 </div>
