@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~materialize-css/dist/css/materialize.css";
 @import "~material-icons/iconfont/material-icons.css";
+/* include the style alertifyjs */
+@import "../node_modules/alertifyjs/build/css/alertify.min.css";
+/* include a theme alertifyjs */
+@import "../node_modules/alertifyjs/build/css/themes/default.min.css";
 
 main {
   display: flex;

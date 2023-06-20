@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { Observable, catchError, throwError } from 'rxjs';
 import { Filme } from '../model/filme';
+declare let alertify : any;
 
 @Injectable({
   providedIn: 'root'
@@ -64,6 +65,8 @@ export class ApiHttpService {
         `Código retornado do back-end ${error.status}, ` +
         `corpo era: ${error.error}`);
     }
+    alertify.set('notifier','delay', 5);
+    alertify.error('Uma falha ocorreu, verifique sua conectividade !');
     return throwError(
       'Algo ruím aconteceu; por favor, tente novamente mais tarde.');
   };
