@@ -48,7 +48,7 @@ Para rodar o projeto em ambiente web, execute o seguinte comando no terminal
 Executar a API Json Server, rode o seguinte comando no terminal
 
 ```bash
-  json-server --watch .\src\app\db.json
+  json-server --watch db.json
 ```
 
 ## Screenshots
