@@ -7,6 +7,7 @@ import { NgForm } from '@angular/forms';
 import { ComboboxHttpService } from 'src/app/services/combobox-http.service';
 import { Classificacao } from 'src/app/model/classificacao';
 import { Genero } from 'src/app/model/genero';
+import { Pais } from 'src/app/model/pais';
 
 declare let alertify : any;
 alertify.set('notifier','position', 'top-right');
@@ -20,12 +21,14 @@ export class CardDetailComponent implements OnInit {
   @ViewChild('altForm') altForm!: NgForm;
   @ViewChild('classificacaoSelect') classificacaoSelect!: ElementRef;
   @ViewChild('generoSelect') generoSelect!: ElementRef;
+  @ViewChild('paisSelect') paisSelect!: ElementRef;
   
   filme?: Filme;
   today:  number = Date.now();
   router: Router;
   classificacoes: Classificacao[];
   genero: Genero[];
+  pais: Pais[];
 
   constructor(private apiHttpService: ApiHttpService,
               router: Router,
@@ -35,24 +38,24 @@ export class CardDetailComponent implements OnInit {
       this.router = router;
       this.classificacoes = [];
       this.genero = [];
+      this.pais = [];
       
   }
 
   ngOnInit() {
-    // inicializar todos os Componentes do Materialize
-    M.AutoInit();
-
-
     // Buscar o filme pelo id
     this.apiHttpService.filmeById(this.route.snapshot.params['id'])
       .subscribe(filme => this.filme = filme);
 
+    // inicializar todos os Componentes do Materialize
     this.listaClassificacao();
     this.listaGenero();
+    this.listaPais();
 
     setTimeout(() => {
       M.FormSelect.init(this.classificacaoSelect.nativeElement);
       M.FormSelect.init(this.generoSelect.nativeElement);
+      M.FormSelect.init(this.paisSelect.nativeElement);
     }, 100);
   }
 
@@ -61,8 +64,8 @@ export class CardDetailComponent implements OnInit {
  */
   listaClassificacao() {
     this.comboboxHttpService.combobox_classificacao().subscribe(
-      (classificacao) => {
-        this.classificacoes = classificacao;
+      (response) => {
+        this.classificacoes = response;
 
         setTimeout(() => {
           M.FormSelect.init(this.classificacaoSelect.nativeElement);
@@ -92,6 +95,23 @@ export class CardDetailComponent implements OnInit {
     );
   }
 
+/**
+ * Retorna a lista do combobox do pais
+ */
+listaPais() {
+  this.comboboxHttpService.combobox_pais().subscribe(
+    (response) => {
+      this.pais = response;
+
+      setTimeout(() => {
+        M.FormSelect.init(this.paisSelect.nativeElement);
+      }, 100);
+    },
+    (error) => {
+      console.log(error);
+    }
+  );
+}  
 
   onSubmitAlterar(filme: Filme) {
     this.apiHttpService.updateById(this.route.snapshot.params['id'], filme).subscribe((response) => {

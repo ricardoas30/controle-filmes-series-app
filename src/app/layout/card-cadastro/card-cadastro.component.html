@@ -7,7 +7,7 @@
                     <div class="input-field col l4 s6">
                         <input id="titulo" name="titulo" [ngModel]="filme.titulo" #name="ngModel" type="text" minlength="5" maxlength="27" class="validate" required>
                         <label for="titulo">Título</label>
-                        <span class="helper-text" data-error="Atenção! máximo de 27 letras." data-success="Título do filme válido"></span>
+                        <span class="helper-text" data-error="Atenção! mínimo de 5 e máximo de 27 letras." data-success="Título do filme válido"></span>
                     </div>
                     <div class="input-field col l4 s6">
                         <input id="ano" name="ano" [ngModel]="filme.ano" #name="ngModel" type="text" class="validate" pattern="^[12][0-9]{3}$" required>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field col l4 m6 s12">
-                        <label for="classificacao" class="active">Gênero</label>
+                        <label for="genero" class="active">Gênero</label>
                         <select multiple
                           id="genero"
                           name="genero"
@@ -61,17 +61,17 @@
                         </select>
                     </div>
                     <div class="input-field col l4 m6 s12">
-                        <select multiple name="pais" [ngModel]="filme.pais" #name="ngModel" required>
-                            <!-- <option value="" disabled selected>Selecione</option> -->
-                            <option value="EUA">Estados Unidos (EUA)</option>
-                            <option value="Reino Unido">Reino Unido</option>
-                            <option value="França">França</option>
-                            <option value="Itália">Itália</option>
-                            <option value="Brasil">Brasil</option>
-                            <option value="India">India</option>
-                            <option value="Espanha">Espanha</option>
+                        <label for="pais" class="active">País</label>
+                        <select multiple
+                          id="pais"
+                          name="pais"
+                          [(ngModel)]="filme.pais"
+                          #name="ngModel"
+                          #paisSelect
+                          required>
+                          <option *ngFor="let p of pais" [ngValue]="p.id" >{{ p.descricao }}
+                          </option>
                         </select>
-                    <label>País</label>
                     </div> 
                 </div>                 
                 <div class="row">

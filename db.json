@@ -143,7 +143,8 @@
       "id": 8
     },
     {
-      "id": 9,
+      "createdAt": "Jun 14, 2023, 11:10:00 AM",
+      "updatedAt": "Jun 21, 2023, 8:20:46 PM",
       "titulo": "Rambo Ate o Fim",
       "ano": "2019",
       "classificacao": 12,
@@ -157,7 +158,7 @@
         "EUA"
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687043685/filme/rambo-ate-o-fim_u0dksw.jpg",
-      "createdAt": "Jun 14, 2023, 11:10:00 AM"
+      "id": 9
     }
   ],
   "classificacao": [
@@ -232,6 +233,36 @@
     {
       "id": "Drama",
       "descricao": "Drama"
+    }
+  ],
+  "pais": [
+    {
+      "id": "EUA",
+      "descricao": "Estados Unidos"
+    },
+    {
+      "id": "Reino Unido",
+      "descricao": "Reino Unido"
+    },
+    {
+      "id": "França",
+      "descricao": "França"
+    },
+    {
+      "id": "Itália",
+      "descricao": "Itália"
+    },
+    {
+      "id": "Brasil",
+      "descricao": "Brasil"
+    },
+    {
+      "id": "Índia",
+      "descricao": "Índia"
+    },
+    {
+      "id": "Espanha",
+      "descricao": "Espanha"
     }
   ]
 }

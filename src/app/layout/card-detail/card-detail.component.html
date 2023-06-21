@@ -62,17 +62,16 @@
                         </select>
                     </div>
                     <div class="input-field col l4 m6 s12">
-                        <select multiple name="pais" #name="ngModel" [ngModel]="filme?.pais" required>
-                            <!-- <option value="" disabled selected>Selecione</option> -->
-                            <option value="EUA">Estados Unidos (EUA)</option>
-                            <option value="Reino Unido">Reino Unido</option>
-                            <option value="França">França</option>
-                            <option value="Itália">Itália</option>
-                            <option value="Brasil">Brasil</option>
-                            <option value="India">India</option>
-                            <option value="Espanha">Espanha</option>
+                        <label for="pais" class="active">País</label>
+                        <select multiple
+                          id="pais"
+                          name="pais"
+                          [ngModel]="filme?.pais"
+                          #name="ngModel"
+                          #paisSelect
+                          required>
+                          <option *ngFor="let p of pais" [ngValue]="p.id" >{{ p.descricao }}</option>
                         </select>
-                    <label>País</label>
                     </div> 
                 </div>                 
                 <div class="row">

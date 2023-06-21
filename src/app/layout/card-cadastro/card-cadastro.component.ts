@@ -7,6 +7,7 @@ import { Classificacao } from 'src/app/model/classificacao';
 import { ComboboxHttpService } from 'src/app/services/combobox-http.service';
 import { NgForm } from '@angular/forms';
 import { Genero } from 'src/app/model/genero';
+import { Pais } from 'src/app/model/pais';
 
 declare let alertify : any;
 alertify.set('notifier','position', 'top-right');
@@ -20,11 +21,13 @@ export class CardCadastroComponent implements OnInit {
   @ViewChild('cadForm') cadForm!: NgForm;
   @ViewChild('classificacaoSelect') classificacaoSelect!: ElementRef;
   @ViewChild('generoSelect') generoSelect!: ElementRef;
+  @ViewChild('paisSelect') paisSelect!: ElementRef;
 
 router: Router;
 date = new Date();
 classificacao!: Classificacao[];
 genero!: Genero[];
+pais!: Pais[];
 
 constructor(private route: ActivatedRoute, 
             router: Router,
@@ -34,14 +37,14 @@ constructor(private route: ActivatedRoute,
   this.router = router;
   this.classificacao = [];
   this.genero = [];
+  this.pais = [];
 }
 
   ngOnInit() {
     // inicializar todos os Componentes do Materialize
-    M.AutoInit();
-
     this.onComboboxClass();
     this.onComboboxGenero();
+    this.onComboboxPais();
   }
 
   filme = {
@@ -101,4 +104,22 @@ constructor(private route: ActivatedRoute,
       }
     );
   }  
+
+  /**
+   * Retorna a lista do combobox do pais
+   */
+  onComboboxPais() {
+    this.comboboxHttpService.combobox_pais().subscribe(
+      (response) => {
+        this.pais = response;
+
+        setTimeout(() => {
+          M.FormSelect.init(this.paisSelect.nativeElement);
+        }, 100);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }    
 }
