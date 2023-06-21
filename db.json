@@ -153,5 +153,37 @@
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687043685/filme/rambo-ate-o-fim_u0dksw.jpg",
       "createdAt": "Jun 14, 2023, 11:10:00 AM"
     }
+  ],
+  "classificacao": [
+    {
+      "id": 0,
+      "descricao": "Livre",
+      "imagemUrl": "../../../assets/logo_classificacao/livre-anos.png"
+    },
+    {
+      "id": 10,
+      "descricao": "10 anos",
+      "imagemUrl": "../../../assets/logo_classificacao/10-anos.png"
+    },
+    {
+      "id": 12,
+      "descricao": "12 anos",
+      "imagemUrl": "../../../assets/logo_classificacao/12-anos.png"
+    },
+    {
+      "id": 14,
+      "descricao": "14 anos",
+      "imagemUrl": "../../../assets/logo_classificacao/14-anos.png"
+    },
+    {
+      "id": 16,
+      "descricao": "16 anos",
+      "imagemUrl": "../../../assets/logo_classificacao/16-anos.png"
+    },
+    {
+      "id": 18,
+      "descricao": "18 anos",
+      "imagemUrl": "../../../assets/logo_classificacao/18-anos.png"
+    }
   ]
 }

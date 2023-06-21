@@ -5,33 +5,36 @@
                 <div class="row">
                     <h5>Cadastrar Filmes</h5>
                     <div class="input-field col l4 s6">
-                        <input id="titulo" name="titulo" [ngModel]="filme.titulo" type="text" class="validate"  pattern="[a-zA-Z][a-zA-Z\d ]{0,27}" required>
+                        <input id="titulo" name="titulo" [ngModel]="filme.titulo" #name="ngModel" type="text" minlength="5" maxlength="27" class="validate" required>
                         <label for="titulo">Título</label>
-                        <span class="helper-text" data-error="Atenção! Valor máximo de 27 letras." data-success="Título válido"></span>
+                        <span class="helper-text" data-error="Atenção! máximo de 27 letras." data-success="Título do filme válido"></span>
                     </div>
                     <div class="input-field col l4 s6">
-                        <input id="ano" name="ano" [ngModel]="filme.ano" type="text" class="validate" pattern="^[12][0-9]{3}$" required>
+                        <input id="ano" name="ano" [ngModel]="filme.ano" #name="ngModel" type="text" class="validate" pattern="^[12][0-9]{3}$" required>
                         <label for="ano">Ano</label>
                         <span class="helper-text" data-error="Atenção! digite o ano do filme corretamente." data-success="Ano válido"></span>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col l4">
-                        <select name="classificacao" [ngModel]="filme.classificacao" required>
-                            <option value="" disabled selected>Selecione</option>
-                            <option value="0" data-icon="../../../assets/logo_classificacao/livre-anos.png" class="left">Classificação Livre</option>
-                            <option value="10" data-icon="../../../assets/logo_classificacao/10-anos.png" class="left">Classificação 10 anos</option>
-                            <option value="12" data-icon="../../../assets/logo_classificacao/12-anos.png" class="left">Classificação 12 anos</option>
-                            <option value="14" data-icon="../../../assets/logo_classificacao/14-anos.png" class="left">Classificação 14 anos</option>
-                            <option value="16" data-icon="../../../assets/logo_classificacao/16-anos.png" class="left">Classificação 16 anos</option>
-                            <option value="18" data-icon="../../../assets/logo_classificacao/18-anos.png" class="left">Classificação 18 anos</option>
+                    <div class="input-field col l4 m6">
+                        <label for="classificacao" class="active">Classificação Etária</label>
+                        <select
+                          id="classificacao"
+                          name="classificacao"
+                          [(ngModel)]="filme.classificacao"
+                          #name="ngModel"
+                          #classificacaoSelect
+                          required>
+                          <option value="" disabled selected>Selecione</option>
+                          <option *ngFor="let s of classificacao" [ngValue]="s.id" >
+                                <img style="margin-top: -9px;" src="{{s.imagemUrl}}" class="circle left">{{ s.descricao }}
+                          </option>
                         </select>
-                        <label>Classificação Etária</label>
                     </div>
                     <div class="row col l4 m6" style="text-align: center;">
                         <label>Assistiu ao filme?</label>
                         <div class="switch">
-                            <label>Não<input type="checkbox" name="assistido" [ngModel]="filme.assistido">
+                            <label>Não<input type="checkbox" name="assistido" [ngModel]="filme.assistido" #name="ngModel">
                             <span class="lever">
                             </span>Sim</label>
                         </div>
@@ -39,13 +42,13 @@
                 </div>
                 <div class="row">
                     <div class="input-field col l8 s12">
-                        <textarea name="sinopse" [ngModel]="filme.sinopse" class="materialize-textarea" required></textarea>
+                        <textarea name="sinopse" [ngModel]="filme.sinopse" #name="ngModel" class="materialize-textarea" required></textarea>
                         <label for="sinopse">Sinópse</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col l4 m6 s12">
-                        <select multiple name="genero" [ngModel]="filme.genero" required>
+                        <select multiple name="genero" [ngModel]="filme.genero" #name="ngModel" required>
                             <!-- <option value="" disabled selected>Selecione</option> -->
                             <option value="Ação">Ação</option>
                             <option value="Aventura">Aventura</option>
@@ -61,7 +64,7 @@
                     <label>Gênero</label>
                     </div>
                     <div class="input-field col l4 m6 s12">
-                        <select multiple name="pais" [ngModel]="filme.pais" required>
+                        <select multiple name="pais" [ngModel]="filme.pais" #name="ngModel" required>
                             <!-- <option value="" disabled selected>Selecione</option> -->
                             <option value="EUA">Estados Unidos (EUA)</option>
                             <option value="Reino Unido">Reino Unido</option>
@@ -76,7 +79,7 @@
                 </div>                 
                 <div class="row">
                     <div class="input-field col l8 m12 s12">
-                        <input name="img" [ngModel]="filme.img" type="text" class="validate" placeholder="URL da internet" required>
+                        <input name="img" [ngModel]="filme.img" #name="ngModel" type="text" class="validate" placeholder="URL da internet" required>
                         <!-- <label for="img">Imagem</label> -->
                         <span class="helper-text" data-error="" data-success=""></span>
                     </div>
@@ -93,7 +96,7 @@
                         </button>
                     </div>
                 </div>
-                <input type="hidden" name="createdAt" [ngModel]="date | date:'medium'">
+                <input type="hidden" name="createdAt" [ngModel]="date | date:'medium'" #name="ngModel">
             </form>
         </div>
     <div class="row"></div>

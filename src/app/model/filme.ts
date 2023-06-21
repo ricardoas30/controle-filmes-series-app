@@ -1,9 +1,12 @@
 export interface Filme {
-  // ? opcional
+  /**
+   * atributo ? null
+   * atributo ! not null 
+   */
   id: number;
   titulo: string;
   assistido?: boolean;
-  sinopse?: string;
+  sinopse: string;
   genero: string [];
   classificacao: number;
   pais: string [];
