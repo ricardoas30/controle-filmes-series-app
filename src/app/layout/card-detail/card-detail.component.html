@@ -2,37 +2,41 @@
     <div class="row"></div>
         <div class="row">
             <form class="col l12 s12 push-l2" #altForm="ngForm" (ngSubmit)="onSubmitAlterar(altForm.value)">
-                <input type="hidden" name="createdAt" [ngModel]="filme?.createdAt">
-                <input type="hidden" name="updatedAt" [ngModel]="today | date:'medium'">
+                <input type="hidden" name="createdAt" #name="ngModel" [ngModel]="filme?.createdAt">
+                <input type="hidden" name="updatedAt" #name="ngModel" [ngModel]="today | date:'medium'">
                 <div class="row">
                     <h5>Alterar Filme</h5>
                     <div class="input-field col l4 s6">
-                        <input id="titulo" name="titulo" [ngModel]="filme?.titulo" type="text" class="validate"  pattern="[a-zA-Z][a-zA-Z\d ]{0,27}" required>
-                        <!-- <label for="titulo">Título</label> -->
-                        <span class="helper-text" data-error="Atenção! Valor máximo de 27 letras." data-success="Título válido"></span>
+                        <input id="titulo" name="titulo" #name="ngModel" [ngModel]="filme?.titulo" type="text" class="validate"  minlength="5" maxlength="27" required>
+                        <label for="titulo" class="active">Título</label>
+                        <span class="helper-text" data-error="Atenção! máximo de 27 letras." data-success="Título do filme válido"></span>
                     </div>
                     <div class="input-field col l4 s6">
-                        <input id="ano" name="ano" [ngModel]="filme?.ano" type="text" class="validate" pattern="^[12][0-9]{3}$" required>
-                        <!-- <label for="ano">Ano</label> -->
+                        <input id="ano" name="ano" #name="ngModel" [ngModel]="filme?.ano" type="text" class="validate" pattern="^[12][0-9]{3}$" required>
+                        <label for="ano" class="active">Ano</label>
                         <span class="helper-text" data-error="Atenção! digite o ano do filme corretamente." data-success="Ano válido"></span>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col l4 m6">
-                        <select  id="classificacao" name="classificacao" [ngModel]="filme?.classificacao" required>
-                            <option value="0" data-icon="../../../assets/logo_classificacao/livre-anos.png" class="left">Livre</option>
-                            <option value="10" data-icon="../../../assets/logo_classificacao/10-anos.png" class="left">10 anos</option>
-                            <option value="12" data-icon="../../../assets/logo_classificacao/12-anos.png" class="left">12 anos</option>
-                            <option value="14" data-icon="../../../assets/logo_classificacao/14-anos.png" class="left">14 anos</option>
-                            <option value="16" data-icon="../../../assets/logo_classificacao/16-anos.png" class="left">16 anos</option>
-                            <option value="18" data-icon="../../../assets/logo_classificacao/18-anos.png" class="left">18 anos</option>
+                    <div class="input-field col l4 m6 s6">
+                        <label for="classificacao" class="active">Classificação Etária</label>
+                        <select
+                          id="classificacao"
+                          name="classificacao"
+                          [ngModel]="filme?.classificacao"
+                          #name="ngModel"
+                          #classificacaoSelect
+                          required>
+                          <option [ngValue]="" disabled>Selecione</option>
+                          <option *ngFor="let s of classificacoes" [ngValue]="s.id" >
+                            <img style="margin-top: -9px;" src="{{s.imagemUrl}}" class="circle left">{{ s.descricao }}
+                          </option>
                         </select>
-                        <label>Classificação Etária</label>
                     </div>
                     <div class="row col l4 m6" style="text-align: center;">
                         <label>Assistiu ao filme?</label>
                         <div class="switch">
-                            <label>Não<input type="checkbox" name="assistido" [ngModel]="filme?.assistido">
+                            <label>Não<input type="checkbox" name="assistido" #name="ngModel" [ngModel]="filme?.assistido">
                             <span class="lever">
                             </span>Sim</label>
                         </div>
@@ -40,13 +44,13 @@
                 </div>
                 <div class="row">
                     <div class="input-field col l8 s12">
-                        <textarea name="sinopse" [ngModel]="filme?.sinopse" class="materialize-textarea" required></textarea>
-                        <!-- <label for="sinopse">Sinópse</label> -->
+                        <textarea name="sinopse" #name="ngModel" [ngModel]="filme?.sinopse" class="materialize-textarea" required></textarea>
+                        <label for="sinopse" class="active">Sinópse</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col l4 m6 s12">
-                        <select multiple name="genero" [ngModel]="filme?.genero" required>
+                        <select multiple name="genero" #name="ngModel" [ngModel]="filme?.genero" required>
                             <!-- <option value="" disabled selected>Selecione</option> -->
                             <option value="Ação">Ação</option>
                             <option value="Aventura">Aventura</option>
@@ -62,7 +66,7 @@
                     <label>Gênero</label>
                     </div>
                     <div class="input-field col l4 m6 s12">
-                        <select multiple name="pais" [ngModel]="filme?.pais" required>
+                        <select multiple name="pais" #name="ngModel" [ngModel]="filme?.pais" required>
                             <!-- <option value="" disabled selected>Selecione</option> -->
                             <option value="EUA">Estados Unidos (EUA)</option>
                             <option value="Reino Unido">Reino Unido</option>
@@ -77,8 +81,8 @@
                 </div>                 
                 <div class="row">
                     <div class="input-field col l8 m12 s12">
-                        <input name="img" [ngModel]="filme?.img" type="text" class="validate" placeholder="URL da internet" required>
-                        <!-- <label for="img">Imagem</label> -->
+                        <input name="img" #name="ngModel" [ngModel]="filme?.img" type="text" class="validate" placeholder="URL da internet" required>
+                        <label for="img" class="active">Imagem do Filme</label>
                         <span class="helper-text" data-error="" data-success=""></span>
                     </div>
                 </div>

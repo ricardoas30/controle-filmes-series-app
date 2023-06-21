@@ -1,12 +1,12 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Classificacao } from '../model/combo01-classific';
+import { Classificacao } from '../model/classificacao';
 
 @Injectable({
   providedIn: 'root'
 })
-export class Combo01ClassificHttpService {
+export class ClassificacaoHttpService {
   url_api: string = 'http://localhost:3000/classificacao';
 
   httpOptions = {

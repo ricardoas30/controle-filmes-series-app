@@ -3,8 +3,8 @@ import { Filme } from 'src/app/model/filme';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ApiHttpService } from 'src/app/services/api-http.service';
 import * as M from 'materialize-css';
-import { Classificacao } from 'src/app/model/combo01-classific';
-import { Combo01ClassificHttpService } from 'src/app/services/combobox-http.service';
+import { Classificacao } from 'src/app/model/classificacao';
+import { ClassificacaoHttpService } from 'src/app/services/combobox-http.service';
 import { NgForm } from '@angular/forms';
 
 declare let alertify : any;
@@ -26,7 +26,7 @@ classificacao!: Classificacao[];
 constructor(private route: ActivatedRoute, 
             router: Router,
             private apiHttpService: ApiHttpService,
-            private classificacaoService: Combo01ClassificHttpService) {
+            private classificacaoService: ClassificacaoHttpService) {
 
   this.router = router;
   this.classificacao = [];
@@ -62,7 +62,7 @@ constructor(private route: ActivatedRoute,
   }
 
   /**
-   * Retorna a lista da classificação etária para apresentar no select
+   * Retorna a lista do combobox de classificação etária
    */
   onComboboxClass() {
     this.classificacaoService.combobox_classificacao().subscribe(

@@ -1,20 +1,23 @@
 {
   "filmes": [
     {
-      "id": 1,
-      "titulo": "babilônia",
+      "createdAt": "Jun 14, 2023, 11:10:00 AM",
+      "updatedAt": "Jun 21, 2023, 4:42:53 PM",
+      "titulo": "babilonia",
+      "ano": "2022",
+      "classificacao": 18,
       "assistido": true,
-      "ano": 2022,
-      "genero": [
-        "Drama"
-      ],
-      "classificacao": 16,
       "sinopse": "Um conto de ambições exageradas e excessos escandalosos, traçando a ascensão e queda de múltiplos personagens durante uma era de desenfreada decadência e depravação no início de Hollywood.",
+      "genero": [
+        "Drama",
+        "Terror"
+      ],
       "pais": [
-        "EUA"
+        "EUA",
+        "Reino Unido"
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1686676026/filme/babilonia_f7ette.webp",
-      "createdAt": "Jun 14, 2023, 11:10:00 AM"
+      "id": 1
     },
     {
       "id": 2,
@@ -34,21 +37,22 @@
       "createdAt": "Jun 14, 2023, 11:10:00 AM"
     },
     {
-      "id": 3,
-      "titulo": "a mãe",
-      "assistido": true,
+      "createdAt": "Jun 14, 2023, 11:10:00 AM",
+      "updatedAt": "Jun 21, 2023, 4:54:58 PM",
+      "titulo": "A Mãe",
       "ano": 2023,
+      "classificacao": 18,
+      "assistido": true,
+      "sinopse": "Uma assassina perigosa teve que abandonar a filha para fugir dos inimigos. Agora, anos depois, ela precisa sair do esconderijo se quiser proteger a menina.",
       "genero": [
         "Ação",
         "Suspense"
       ],
-      "classificacao": 18,
-      "sinopse": "Uma assassina perigosa teve que abandonar a filha para fugir dos inimigos. Agora, anos depois, ela precisa sair do esconderijo se quiser proteger a menina.",
       "pais": [
         "EUA"
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1686676094/filme/a_mae_lqusq6.jpg",
-      "createdAt": "Jun 14, 2023, 11:10:00 AM"
+      "id": 3
     },
     {
       "id": 4,
@@ -67,21 +71,22 @@
       "createdAt": "Jun 14, 2023, 11:10:00 AM"
     },
     {
-      "id": 5,
+      "createdAt": "Jun 14, 2023, 11:10:00 AM",
+      "updatedAt": "Jun 21, 2023, 5:35:18 PM",
       "titulo": "guardiões da galáxia III",
-      "assistido": false,
       "ano": 2023,
+      "classificacao": 12,
+      "assistido": false,
+      "sinopse": "Em Guardiões da Galáxia Vol. 3, o amado grupo de desajustados busca se estabelecer em Lugar Nenhum, mas não demora muito para que suas vidas sejam reviradas pelos ecos do passado turbulento de Rocket (Bradley Cooper). Ainda se recuperando da perda de Gamora (Zoe Saldana), após os acontecimentos de Vingadores: Guerra Infinita (2018), Peter Quill (Chris Pratt) reúne sua equipe para defender o universo e um companheiro de equipe. Mas esta missão pode significar o fim dos Guardiões como conhecemos, se ela não for bem-sucedida. Encerramento da trilogia iniciada em 2014, sendo a continuação de Guardiões da Galáxia Vol. 2 (2017).",
       "genero": [
         "Ação",
         "Aventura"
       ],
-      "classificacao": 0,
-      "sinopse": "Em Guardiões da Galáxia Vol. 3, o amado grupo de desajustados busca se estabelecer em Lugar Nenhum, mas não demora muito para que suas vidas sejam reviradas pelos ecos do passado turbulento de Rocket (Bradley Cooper). Ainda se recuperando da perda de Gamora (Zoe Saldana), após os acontecimentos de Vingadores: Guerra Infinita (2018), Peter Quill (Chris Pratt) reúne sua equipe para defender o universo e um companheiro de equipe. Mas esta missão pode significar o fim dos Guardiões como conhecemos, se ela não for bem-sucedida. Encerramento da trilogia iniciada em 2014, sendo a continuação de Guardiões da Galáxia Vol. 2 (2017).",
       "pais": [
         "EUA"
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1686676076/filme/guardioes_galaxia_zl98ng.webp",
-      "createdAt": "Jun 14, 2023, 11:10:00 AM"
+      "id": 5
     },
     {
       "id": 6,
@@ -102,10 +107,10 @@
     },
     {
       "createdAt": "Jun 14, 2023, 11:10:00 AM",
-      "updatedAt": "Jun 18, 2023, 3:24:48 PM",
+      "updatedAt": "Jun 21, 2023, 3:36:35 PM",
       "titulo": "transformers parte 2",
       "ano": "2023",
-      "classificacao": "0",
+      "classificacao": 0,
       "assistido": false,
       "sinopse": "Durante os anos 90, uma nova facção de Transformers – os Maximals – junta-se aos Autobots como aliados na batalha pela Terra.",
       "genero": [
@@ -116,14 +121,14 @@
         "EUA",
         "Reino Unido"
       ],
-      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687014852/Transformers-O-Despertar-das-Feras_bez5pn.jpg",
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687022010/filme/Transformers-O-Despertar-das-Feras_hnu16q.jpg",
       "id": 7
     },
     {
       "id": 8,
       "titulo": "Resgate 2",
       "ano": "2023",
-      "classificacao": "16",
+      "classificacao": 16,
       "assistido": false,
       "sinopse": "Depois de escapar da morte por um triz, o mercenário Tyler Rake encara mais uma missão perigosa: resgatar a família de um criminoso implacável.",
       "genero": [
@@ -140,7 +145,7 @@
       "id": 9,
       "titulo": "Rambo Ate o Fim",
       "ano": "2019",
-      "classificacao": "12",
+      "classificacao": 12,
       "assistido": false,
       "sinopse": "O tempo passou para Rambo, agora ele vive recluso e trabalha em um rancho que fica na fronteira entre os Estados Unidos e o México. Sua vida antiga marcada por lutas violentas, mas quase sempre vitoriosas, ficou no passado. No entanto, quando a filha de um amigo é sequestrada, Rambo não consegue controlar seu ímpeto por justiça e resolve enfrentar um dos mais perigosos cartéis do México",
       "genero": [
