@@ -125,7 +125,8 @@
       "id": 7
     },
     {
-      "id": 8,
+      "createdAt": "Jun 14, 2023, 11:10:00 AM",
+      "updatedAt": "Jun 21, 2023, 7:48:59 PM",
       "titulo": "Resgate 2",
       "ano": "2023",
       "classificacao": 16,
@@ -139,7 +140,7 @@
         "EUA"
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687043600/filme/Resgate-2_v0mtu1.jpg",
-      "createdAt": "Jun 14, 2023, 11:10:00 AM"
+      "id": 8
     },
     {
       "id": 9,
@@ -189,6 +190,48 @@
       "id": 18,
       "descricao": "18 anos",
       "imagemUrl": "../../../assets/logo_classificacao/18-anos.png"
+    }
+  ],
+  "genero": [
+    {
+      "id": "Ação",
+      "descricao": "Ação"
+    },
+    {
+      "id": "Aventura",
+      "descricao": "Aventura"
+    },
+    {
+      "id": "Suspense",
+      "descricao": "Suspense"
+    },
+    {
+      "id": "Ficção",
+      "descricao": "Ficção"
+    },
+    {
+      "id": "Terror",
+      "descricao": "Terror"
+    },
+    {
+      "id": "Comédia",
+      "descricao": "Comédia"
+    },
+    {
+      "id": "Romance",
+      "descricao": "Romance"
+    },
+    {
+      "id": "Série",
+      "descricao": "Série"
+    },
+    {
+      "id": "Documentário",
+      "descricao": "Documentário"
+    },
+    {
+      "id": "Drama",
+      "descricao": "Drama"
     }
   ]
 }

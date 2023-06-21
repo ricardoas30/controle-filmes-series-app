@@ -50,20 +50,16 @@
                 </div>
                 <div class="row">
                     <div class="input-field col l4 m6 s12">
-                        <select multiple name="genero" #name="ngModel" [ngModel]="filme?.genero" required>
-                            <!-- <option value="" disabled selected>Selecione</option> -->
-                            <option value="Ação">Ação</option>
-                            <option value="Aventura">Aventura</option>
-                            <option value="Suspense">Suspense</option>
-                            <option value="Ficção">Ficção</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Terror">Terror</option>
-                            <option value="Comédia">Comédia</option>
-                            <option value="Romance">Romance</option>
-                            <option value="Séries">Séries</option>
-                            <option value="Documentário">Documentário</option>
+                        <label for="genero" class="active">Gênero</label>
+                        <select multiple
+                          id="genero"
+                          name="genero"
+                          [ngModel]="filme?.genero"
+                          #name="ngModel"
+                          #generoSelect
+                          required>
+                          <option *ngFor="let g of genero" [ngValue]="g.id" >{{ g.descricao }}</option>
                         </select>
-                    <label>Gênero</label>
                     </div>
                     <div class="input-field col l4 m6 s12">
                         <select multiple name="pais" #name="ngModel" [ngModel]="filme?.pais" required>

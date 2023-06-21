@@ -4,8 +4,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ApiHttpService } from 'src/app/services/api-http.service';
 import * as M from 'materialize-css';
 import { Classificacao } from 'src/app/model/classificacao';
-import { ClassificacaoHttpService } from 'src/app/services/combobox-http.service';
+import { ComboboxHttpService } from 'src/app/services/combobox-http.service';
 import { NgForm } from '@angular/forms';
+import { Genero } from 'src/app/model/genero';
 
 declare let alertify : any;
 alertify.set('notifier','position', 'top-right');
@@ -18,18 +19,21 @@ alertify.set('notifier','position', 'top-right');
 export class CardCadastroComponent implements OnInit {
   @ViewChild('cadForm') cadForm!: NgForm;
   @ViewChild('classificacaoSelect') classificacaoSelect!: ElementRef;
+  @ViewChild('generoSelect') generoSelect!: ElementRef;
 
 router: Router;
 date = new Date();
 classificacao!: Classificacao[];
+genero!: Genero[];
 
 constructor(private route: ActivatedRoute, 
             router: Router,
             private apiHttpService: ApiHttpService,
-            private classificacaoService: ClassificacaoHttpService) {
+            private comboboxHttpService: ComboboxHttpService) {
 
   this.router = router;
   this.classificacao = [];
+  this.genero = [];
 }
 
   ngOnInit() {
@@ -37,6 +41,7 @@ constructor(private route: ActivatedRoute,
     M.AutoInit();
 
     this.onComboboxClass();
+    this.onComboboxGenero();
   }
 
   filme = {
@@ -65,7 +70,7 @@ constructor(private route: ActivatedRoute,
    * Retorna a lista do combobox de classificação etária
    */
   onComboboxClass() {
-    this.classificacaoService.combobox_classificacao().subscribe(
+    this.comboboxHttpService.combobox_classificacao().subscribe(
       (classificacao) => {
         this.classificacao = classificacao;
 
@@ -78,4 +83,22 @@ constructor(private route: ActivatedRoute,
       }
     );
   }
+
+  /**
+   * Retorna a lista do combobox do genero
+   */
+  onComboboxGenero() {
+    this.comboboxHttpService.combobox_genero().subscribe(
+      (genero) => {
+        this.genero = genero;
+
+        setTimeout(() => {
+          M.FormSelect.init(this.generoSelect.nativeElement);
+        }, 100);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }  
 }
