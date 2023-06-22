@@ -10,9 +10,8 @@ export class FooterComponent {
   date = new Date();
   
   dados = {
-    nome_app: 'Filmes App',
     nome_projeto: 'Projetos',
-    copyright: `Copyright©2023-${this.date.getFullYear()}, Controle de Filmes e Séries App`,
+    copyright: `© Copyright 2023-${this.date.getFullYear()}, Projeto Filmes e Séries`,
     home: {
       nome: 'Home',
       url: '/home'
