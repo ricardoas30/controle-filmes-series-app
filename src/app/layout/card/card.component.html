@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col l4 m6 s12" *ngFor="let filme of filmeList">
+            <div class="container">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator tamanho-img" [src]="filme.img" *ngIf="filme.img">
+                        <img class="activator tamanho-img" src="../../../assets/filmes/sem-imagem.gif" *ngIf="!filme.img">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            <i class="tiny material-icons left" *ngIf="filme.assistido" style="margin-right: 2px;">star</i>
+                            <i class="tiny material-icons left" *ngIf="!filme.assistido" style="margin-right: 2px;">star_border</i>
+                            {{filme.titulo | ucwords}}<i class="material-icons right">more_vert</i>
+                            
+                            <p style="text-align: left; font-size: 11px;">
+                                {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
+                            </p>
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0" src="../../../assets/logo_classificacao/livre-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 10" src="../../../assets/logo_classificacao/10-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 12" src="../../../assets/logo_classificacao/12-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 14" src="../../../assets/logo_classificacao/14-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 16" src="../../../assets/logo_classificacao/16-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="../../../assets/logo_classificacao/18-anos.png">
+                            
+                        </span>
+                        <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']" (click)="onConfirmDelete([filme.id])">Deletar</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <i class="tiny material-icons left" style="margin-top: 5px;" *ngIf="filme.assistido">star</i>
+                        <i class="tiny material-icons left" style="margin-top: 5px;" *ngIf="!filme.assistido">star_border</i>
+                        <span class="card-title grey-text text-darken-4">{{filme.titulo | ucwords}}<i class="material-icons right">close</i></span>
+                        <p style="text-align: justify; font-size: 13px;">{{filme.sinopse}}</p>
+                        <p style="text-align: left; font-size: 12px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+
+                            {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
+                        </p>
+                        <p style="text-align: right; font-size: xx-small;" *ngIf="!filme.updatedAt">Criação: {{filme.createdAt | date: 'd/M/yyyy h:mm:a'}}</p>
+                        <p style="text-align: right; font-size: xx-small;" *ngIf="filme.updatedAt">Atualização: {{filme.updatedAt | date: 'd/M/yyyy h:mm:a'}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

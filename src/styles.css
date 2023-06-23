@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~materialize-css/dist/css/materialize.css";
+@import "~material-icons/iconfont/material-icons.css";
+/* include the style alertifyjs */
+@import "../node_modules/alertifyjs/build/css/alertify.min.css";
+/* include a theme alertifyjs */
+@import "../node_modules/alertifyjs/build/css/themes/default.min.css";
+
+main {
+  display: flex;
+  min-height: 65.8vh;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+.cor-menu, .cor-footer, .cor-menu-lateral {
+  background-color: #032e4b;
+}
+.tamanho-img {
+  height: 400px;
+}
+.app-loading {
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

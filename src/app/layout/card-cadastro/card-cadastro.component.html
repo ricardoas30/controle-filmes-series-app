@@ -1,0 +1,100 @@
+<div class="container contact">
+    <div class="row"></div>
+        <div class="row">
+            <form class="col l12 s12 push-l2" #cadForm="ngForm" (ngSubmit)="onSubmitCadastro(cadForm.value)">
+                <div class="row">
+                    <h5>Cadastrar Filmes</h5>
+                    <div class="input-field col l4 s6">
+                        <input id="titulo" name="titulo" [ngModel]="filme.titulo" #name="ngModel" type="text" minlength="5" maxlength="27" class="validate" required>
+                        <label for="titulo">Título</label>
+                        <span class="helper-text" data-error="Atenção! mínimo de 5 e máximo de 27 letras." data-success="Título do filme válido"></span>
+                    </div>
+                    <div class="input-field col l4 s6">
+                        <input id="ano" name="ano" [ngModel]="filme.ano" #name="ngModel" type="text" class="validate" pattern="^[12][0-9]{3}$" required>
+                        <label for="ano">Ano</label>
+                        <span class="helper-text" data-error="Atenção! digite o ano do filme corretamente." data-success="Ano válido"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l4 m6 s6">
+                        <label for="classificacao" class="active">Classificação Etária</label>
+                        <select
+                          id="classificacao"
+                          name="classificacao"
+                          [(ngModel)]="filme.classificacao"
+                          #name="ngModel"
+                          #classificacaoSelect
+                          required>
+                          <option value="" disabled selected>Selecione</option>
+                          <option *ngFor="let s of classificacao" [ngValue]="s.id" >
+                                <img style="margin-top: -9px;" src="{{s.imagemUrl}}" class="circle left">{{ s.descricao }}
+                          </option>
+                        </select>
+                    </div>
+                    <div class="row col l4 m6 s6" style="text-align: center;">
+                        <label>Assistiu ao filme?</label>
+                        <div class="switch">
+                            <label>Não<input type="checkbox" name="assistido" [ngModel]="filme.assistido" #name="ngModel">
+                            <span class="lever">
+                            </span>Sim</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l8 s12">
+                        <textarea name="sinopse" [ngModel]="filme.sinopse" #name="ngModel" class="materialize-textarea" data-length="120" required></textarea>
+                        <label for="sinopse">Sinópse</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col l4 m6 s12">
+                        <label for="genero" class="active">Gênero</label>
+                        <select multiple
+                          id="genero"
+                          name="genero"
+                          [(ngModel)]="filme.genero"
+                          #name="ngModel"
+                          #generoSelect
+                          required>
+                          <option *ngFor="let g of genero" [ngValue]="g.id" >{{ g.descricao }}
+                          </option>
+                        </select>
+                    </div>
+                    <div class="input-field col l4 m6 s12">
+                        <label for="pais" class="active">País</label>
+                        <select multiple
+                          id="pais"
+                          name="pais"
+                          [(ngModel)]="filme.pais"
+                          #name="ngModel"
+                          #paisSelect
+                          required>
+                          <option *ngFor="let p of pais" [ngValue]="p.id" >{{ p.descricao }}
+                          </option>
+                        </select>
+                    </div> 
+                </div>                 
+                <div class="row">
+                    <div class="input-field col l8 m12 s12">
+                        <input name="img" [ngModel]="filme.img" #name="ngModel" type="text" class="validate" placeholder="URL da internet" required>
+                        <label for="img" class="active">Imagem do Filme</label>
+                        <span class="helper-text" data-error="" data-success=""></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l4 m6 s6">
+                        <button class="btn red lighten-2 waves-effect waves-light col l12 m12 s12" type="reset">Limpar
+                            <i class="material-icons right">clear</i>
+                        </button> 
+                    </div>
+                    <div class="col l4 m6 s6">
+                        <button class="btn waves-effect waves-light col l12 m12 s12" type="submit" [disabled]="!cadForm.valid">Salvar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+                <input type="hidden" name="createdAt" [ngModel]="date | date:'short'" #name="ngModel">
+            </form>
+        </div>
+    <div class="row"></div>
+</div>
