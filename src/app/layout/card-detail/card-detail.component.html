@@ -44,7 +44,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field col l8 s12">
-                        <textarea name="sinopse" #name="ngModel" [ngModel]="filme?.sinopse" class="materialize-textarea" required></textarea>
+                        <textarea name="sinopse" #sinopseTextArea #name="ngModel" [ngModel]="filme?.sinopse" class="materialize-textarea" required></textarea>
                         <label for="sinopse" class="active">Sinópse</label>
                     </div>
                 </div>
@@ -83,8 +83,8 @@
                 </div>
                 <div class="row">
                     <div class="col l4 m6 s6">
-                        <button class="btn red lighten-2 waves-effect waves-light col l12 m12 s12" type="reset">Limpar
-                            <i class="material-icons right">clear</i>
+                        <button class="btn red lighten-2 waves-effect waves-light col l12 m12 s12" type="button" (click)="onCancel()">Cancelar
+                            <i class="material-icons right">cancel</i>
                         </button> 
                     </div>
                     <div class="col l4 m6 s6">

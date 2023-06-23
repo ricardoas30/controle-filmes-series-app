@@ -2,6 +2,24 @@
     <nav class="cor-menu">
         
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <!-- Título da aplicação para dispositivo móvel celular -->
+        <div class="container nav-wrapper hide-on-large-only hide-on-med-only">
+            <a [routerLink]="[dados.home.url]" class="brand-logo center" style="font-size: large;">{{dados.titulo}}
+                <i class="large material-icons">home</i>
+            </a>
+        </div>
+        <!-- Fim -->
+
+        <!-- Título da aplicação para dispositivo móvel tablet -->
+        <div class="container nav-wrapper hide-on-large-only hide-on-small-only">
+            <a [routerLink]="[dados.home.url]" class="brand-logo left" style="font-size: large;">{{dados.titulo}}
+                <i class="large material-icons">home</i>
+            </a>
+        </div>
+        <!-- Fim -->
+
+        <!-- Título da aplicação para desktop -->
         <div class="container nav-wrapper hide-on-small-only hide-on-med-only">
             <a [routerLink]="[dados.home.url]" class="brand-logo left" style="font-size: large;">{{dados.titulo}}
                 <i class="large material-icons">home</i>
@@ -14,5 +32,6 @@
                 
             </ul>
         </div>
+        <!-- Fim -->
     </nav>
 </div>

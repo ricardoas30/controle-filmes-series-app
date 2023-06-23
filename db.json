@@ -107,7 +107,7 @@
     },
     {
       "createdAt": "Jun 14, 2023, 11:10:00 AM",
-      "updatedAt": "Jun 21, 2023, 3:36:35 PM",
+      "updatedAt": "6/23/23, 8:21 PM",
       "titulo": "transformers parte 2",
       "ano": "2023",
       "classificacao": 0,
@@ -118,8 +118,7 @@
         "Ficção"
       ],
       "pais": [
-        "EUA",
-        "Reino Unido"
+        "EUA"
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687022010/filme/Transformers-O-Despertar-das-Feras_hnu16q.jpg",
       "id": 7
@@ -144,12 +143,12 @@
     },
     {
       "createdAt": "Jun 14, 2023, 11:10:00 AM",
-      "updatedAt": "Jun 21, 2023, 8:20:46 PM",
+      "updatedAt": "6/23/23, 7:14 PM",
       "titulo": "Rambo Ate o Fim",
       "ano": "2019",
       "classificacao": 12,
       "assistido": false,
-      "sinopse": "O tempo passou para Rambo, agora ele vive recluso e trabalha em um rancho que fica na fronteira entre os Estados Unidos e o México. Sua vida antiga marcada por lutas violentas, mas quase sempre vitoriosas, ficou no passado. No entanto, quando a filha de um amigo é sequestrada, Rambo não consegue controlar seu ímpeto por justiça e resolve enfrentar um dos mais perigosos cartéis do México",
+      "sinopse": "O tempo passou para Rambo, agora ele vive recluso e trabalha em um rancho que fica na fronteira entre os Estados Unidos e o México. Sua vida antiga marcada por lutas violentas, mas quase sempre vitoriosas, ficou no passado. No entanto, quando a filha de um amigo é sequestrada, Rambo não consegue controlar seu ímpeto por justiça e resolve enfrentar um dos mais perigosos cartéis do México.",
       "genero": [
         "Ação",
         "Aventura"
@@ -159,6 +158,23 @@
       ],
       "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687043685/filme/rambo-ate-o-fim_u0dksw.jpg",
       "id": 9
+    },
+    {
+      "createdAt": "6/23/23, 8:21 PM",
+      "updatedAt": "6/23/23, 8:22 PM",
+      "titulo": "Marina",
+      "ano": "1981",
+      "classificacao": 0,
+      "assistido": true,
+      "sinopse": "Emancipação, uma História de Liberdade conta a triunfante história de um homem escravizado que foge e atravessa os pântanos da Louisiana, nos Estados Unidos, em uma jornada tortuosa para escapar dos proprietários de plantações que quase o mataram. Peter (Will Smith) é o homem em busca da sua liberdade, que escapa da escravidão confiando em sua inteligência, fé inabalável e profundo amor por sua família, fazendo o impossível para se livrar dos caçadores de sangue frio nos implacáveis pântanos da Louisiana. O filme é inspirado nas fotos reais, de 1863, de “Peter chicoteado” (Whipped Peter), tiradas durante um exame médico do Exército dos EUA, que apareceram, pela primeira vez, na revista Harper’s Weekly. Uma destas fotos, conhecida como “As Costas Açoitadas” (The Scourged Back), mostra as costas nuas de Peter mutiladas pelas chicotadas de seus escravizadores e acabou contribuindo para a crescente oposição pública à escravidão, se tornando um símbolo das atrocidades cometidas em seu tempo.",
+      "genero": [
+        "Ação"
+      ],
+      "pais": [
+        "Espanha"
+      ],
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687043600/filme/Resgate-2_v0mtu1.jpg",
+      "id": 10
     }
   ],
   "classificacao": [
