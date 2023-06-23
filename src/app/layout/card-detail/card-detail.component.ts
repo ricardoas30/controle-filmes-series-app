@@ -22,6 +22,7 @@ export class CardDetailComponent implements OnInit {
   @ViewChild('classificacaoSelect') classificacaoSelect!: ElementRef;
   @ViewChild('generoSelect') generoSelect!: ElementRef;
   @ViewChild('paisSelect') paisSelect!: ElementRef;
+  @ViewChild('sinopseTextArea') sinopseTextArea!: ElementRef;
   
   filme?: Filme;
   date = new Date();
@@ -51,6 +52,11 @@ export class CardDetailComponent implements OnInit {
     this.listaClassificacao();
     this.listaGenero();
     this.listaPais();
+
+    // Resize na textArea sinopse.
+    setTimeout(() => {
+      M.textareaAutoResize(this.sinopseTextArea.nativeElement);
+    }, 110);
   }
 
 /**
@@ -113,6 +119,10 @@ listaPais() {
     },(error => {
       alertify.error('Erro ao alterar o filme, verifique sua conexão.');
     }));
+    this.router.navigate(['/home'], { relativeTo: this.route.parent });
+  }
+
+  onCancel() {
     this.router.navigate(['/home'], { relativeTo: this.route.parent });
   }
 }

@@ -27,14 +27,15 @@
                         <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']" (click)="onConfirmDelete([filme.id])">Deletar</a></p>
                     </div>
                     <div class="card-reveal">
+                        <i class="tiny material-icons left" style="margin-top: 5px;" *ngIf="filme.assistido">star</i>
+                        <i class="tiny material-icons left" style="margin-top: 5px;" *ngIf="!filme.assistido">star_border</i>
                         <span class="card-title grey-text text-darken-4">{{filme.titulo | ucwords}}<i class="material-icons right">close</i></span>
                         <p style="text-align: justify; font-size: 13px;">{{filme.sinopse}}</p>
                         <p style="text-align: left; font-size: 12px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                            <i class="tiny material-icons right" *ngIf="filme.assistido">star</i>
-                            <i class="tiny material-icons right" *ngIf="!filme.assistido">star_border</i>
+
                             {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                         </p>
-                        <p style="text-align: right; font-size: xx-small;" *ngIf="filme.createdAt">Criação: {{filme.createdAt | date: 'd/M/yyyy h:mm:a'}}</p>
+                        <p style="text-align: right; font-size: xx-small;" *ngIf="!filme.updatedAt">Criação: {{filme.createdAt | date: 'd/M/yyyy h:mm:a'}}</p>
                         <p style="text-align: right; font-size: xx-small;" *ngIf="filme.updatedAt">Atualização: {{filme.updatedAt | date: 'd/M/yyyy h:mm:a'}}</p>
                     </div>
                 </div>

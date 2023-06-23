@@ -9,7 +9,7 @@ declare let alertify : any;
 })
 export class ApiHttpService {
   url_api: string = 'http://localhost:3000/filmes';
-  options: string = '?_sort=id&_order=desc';
+  options: string = '?_sort=assistido&_order=asc';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }

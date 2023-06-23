@@ -23,11 +23,11 @@ export class CardCadastroComponent implements OnInit {
   @ViewChild('generoSelect') generoSelect!: ElementRef;
   @ViewChild('paisSelect') paisSelect!: ElementRef;
 
-router: Router;
-date = new Date();
-classificacao!: Classificacao[];
-genero!: Genero[];
-pais!: Pais[];
+  router: Router;
+  date = new Date();
+  classificacao!: Classificacao[];
+  genero!: Genero[];
+  pais!: Pais[];
 
 constructor(private route: ActivatedRoute, 
             router: Router,
