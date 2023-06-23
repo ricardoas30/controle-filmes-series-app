@@ -23,7 +23,7 @@
       "id": 2,
       "titulo": "velozes e furiosos 10",
       "assistido": false,
-      "ano": 2023,
+      "ano": "2023",
       "genero": [
         "Ação",
         "Policial"
@@ -40,7 +40,7 @@
       "createdAt": "Jun 14, 2023, 11:10:00 AM",
       "updatedAt": "Jun 21, 2023, 4:54:58 PM",
       "titulo": "A Mãe",
-      "ano": 2023,
+      "ano": "2023",
       "classificacao": 18,
       "assistido": true,
       "sinopse": "Uma assassina perigosa teve que abandonar a filha para fugir dos inimigos. Agora, anos depois, ela precisa sair do esconderijo se quiser proteger a menina.",
@@ -58,7 +58,7 @@
       "id": 4,
       "titulo": "avatar II",
       "assistido": true,
-      "ano": 2022,
+      "ano": "2022",
       "genero": [
         "Ficção"
       ],
@@ -74,7 +74,7 @@
       "createdAt": "Jun 14, 2023, 11:10:00 AM",
       "updatedAt": "Jun 21, 2023, 5:35:18 PM",
       "titulo": "guardiões da galáxia III",
-      "ano": 2023,
+      "ano": "2023",
       "classificacao": 12,
       "assistido": false,
       "sinopse": "Em Guardiões da Galáxia Vol. 3, o amado grupo de desajustados busca se estabelecer em Lugar Nenhum, mas não demora muito para que suas vidas sejam reviradas pelos ecos do passado turbulento de Rocket (Bradley Cooper). Ainda se recuperando da perda de Gamora (Zoe Saldana), após os acontecimentos de Vingadores: Guerra Infinita (2018), Peter Quill (Chris Pratt) reúne sua equipe para defender o universo e um companheiro de equipe. Mas esta missão pode significar o fim dos Guardiões como conhecemos, se ela não for bem-sucedida. Encerramento da trilogia iniciada em 2014, sendo a continuação de Guardiões da Galáxia Vol. 2 (2017).",
@@ -92,7 +92,7 @@
       "id": 6,
       "titulo": "emancipação",
       "assistido": true,
-      "ano": 2022,
+      "ano": "2022",
       "genero": [
         "Ação",
         "Suspense"

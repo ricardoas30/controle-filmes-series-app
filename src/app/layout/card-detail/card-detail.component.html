@@ -3,7 +3,7 @@
         <div class="row">
             <form class="col l12 s12 push-l2" #altForm="ngForm" (ngSubmit)="onSubmitAlterar(altForm.value)">
                 <input type="hidden" name="createdAt" #name="ngModel" [ngModel]="filme?.createdAt">
-                <input type="hidden" name="updatedAt" #name="ngModel" [ngModel]="today | date:'medium'">
+                <input type="hidden" name="updatedAt" #name="ngModel" [ngModel]="date | date:'short'">
                 <div class="row">
                     <h5>Alterar Filme</h5>
                     <div class="input-field col l4 s6">

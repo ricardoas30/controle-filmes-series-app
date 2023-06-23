@@ -24,7 +24,7 @@ export class CardDetailComponent implements OnInit {
   @ViewChild('paisSelect') paisSelect!: ElementRef;
   
   filme?: Filme;
-  today:  number = Date.now();
+  date = new Date();
   router: Router;
   classificacoes: Classificacao[];
   genero: Genero[];
@@ -51,12 +51,6 @@ export class CardDetailComponent implements OnInit {
     this.listaClassificacao();
     this.listaGenero();
     this.listaPais();
-
-    setTimeout(() => {
-      M.FormSelect.init(this.classificacaoSelect.nativeElement);
-      M.FormSelect.init(this.generoSelect.nativeElement);
-      M.FormSelect.init(this.paisSelect.nativeElement);
-    }, 100);
   }
 
 /**
@@ -87,7 +81,7 @@ export class CardDetailComponent implements OnInit {
 
         setTimeout(() => {
           M.FormSelect.init(this.generoSelect.nativeElement);
-        }, 100);
+        }, 150);
       },
       (error) => {
         console.log(error);
@@ -105,7 +99,7 @@ listaPais() {
 
       setTimeout(() => {
         M.FormSelect.init(this.paisSelect.nativeElement);
-      }, 100);
+      }, 200);
     },
     (error) => {
       console.log(error);

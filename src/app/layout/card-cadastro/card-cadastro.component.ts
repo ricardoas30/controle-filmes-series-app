@@ -97,7 +97,7 @@ constructor(private route: ActivatedRoute,
 
         setTimeout(() => {
           M.FormSelect.init(this.generoSelect.nativeElement);
-        }, 100);
+        }, 150);
       },
       (error) => {
         console.log(error);
@@ -115,7 +115,7 @@ constructor(private route: ActivatedRoute,
 
         setTimeout(() => {
           M.FormSelect.init(this.paisSelect.nativeElement);
-        }, 100);
+        }, 200);
       },
       (error) => {
         console.log(error);

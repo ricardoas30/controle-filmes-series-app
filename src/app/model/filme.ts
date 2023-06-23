@@ -10,7 +10,8 @@ export interface Filme {
   genero: string [];
   classificacao: number;
   pais: string [];
-  ano: number;
+  ano: string;
   img: string;
   createdAt: Date;
+  updatedAt: Date;
 }

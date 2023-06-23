@@ -11,8 +11,6 @@ declare let alertify : any;
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  url_api: string = 'http://localhost:3000/filmes/delete';
-  route: Router | undefined;
   // filmes = [...filmes];
 
   constructor(private apiHttpService: ApiHttpService){}
