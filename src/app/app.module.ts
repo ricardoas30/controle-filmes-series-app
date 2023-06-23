@@ -14,6 +14,7 @@ import { SobreItemComponent } from './layout/sobre-item/sobre-item.component';
 import { CardDetailComponent } from './layout/card-detail/card-detail.component';
 import { CardCadastroComponent } from './layout/card-cadastro/card-cadastro.component';
 import {NgPipesModule} from 'ngx-pipes';
+import { NotFoundComponent } from './layout/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {NgPipesModule} from 'ngx-pipes';
     CardComponent,
     SobreItemComponent,
     CardDetailComponent,
-    CardCadastroComponent
+    CardCadastroComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
