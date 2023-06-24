@@ -5,7 +5,7 @@
                 <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator tamanho-img" [src]="filme.img" *ngIf="filme.img">
-                        <img class="activator tamanho-img" src="../../../assets/filmes/sem-imagem.gif" *ngIf="!filme.img">
+                        <img class="activator tamanho-img" src="https://res.cloudinary.com/du7q7wpps/image/upload/v1687571932/assets/sem-imagem_uwtslu.gif" *ngIf="!filme.img">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">
@@ -16,12 +16,12 @@
                             <p style="text-align: left; font-size: 11px;">
                                 {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                             </p>
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0" src="../../../assets/logo_classificacao/livre-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 10" src="../../../assets/logo_classificacao/10-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 12" src="../../../assets/logo_classificacao/12-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 14" src="../../../assets/logo_classificacao/14-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 16" src="../../../assets/logo_classificacao/16-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="../../../assets/logo_classificacao/18-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0" src="https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/livre-anos_aml7y0.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 10" src="https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/10-anos_ufv4rb.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 12" src="https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/12-anos_xyvxrl.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 14" src="https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/14-anos_zwd6in.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 16" src="https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/16-anos_lkul1b.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/18-anos_febr5t.png">
                             
                         </span>
                         <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']" (click)="onConfirmDelete([filme.id])">Deletar</a></p>

@@ -181,32 +181,32 @@
     {
       "id": 0,
       "descricao": "Livre",
-      "imagemUrl": "../../../assets/logo_classificacao/livre-anos.png"
+      "imagemUrl": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/livre-anos_aml7y0.png"
     },
     {
       "id": 10,
       "descricao": "10 anos",
-      "imagemUrl": "../../../assets/logo_classificacao/10-anos.png"
+      "imagemUrl": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/10-anos_ufv4rb.png"
     },
     {
       "id": 12,
       "descricao": "12 anos",
-      "imagemUrl": "../../../assets/logo_classificacao/12-anos.png"
+      "imagemUrl": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/12-anos_xyvxrl.png"
     },
     {
       "id": 14,
       "descricao": "14 anos",
-      "imagemUrl": "../../../assets/logo_classificacao/14-anos.png"
+      "imagemUrl": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/14-anos_zwd6in.png"
     },
     {
       "id": 16,
       "descricao": "16 anos",
-      "imagemUrl": "../../../assets/logo_classificacao/16-anos.png"
+      "imagemUrl": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/16-anos_lkul1b.png"
     },
     {
       "id": 18,
       "descricao": "18 anos",
-      "imagemUrl": "../../../assets/logo_classificacao/18-anos.png"
+      "imagemUrl": "https://res.cloudinary.com/du7q7wpps/image/upload/v1687571670/assets/18-anos_febr5t.png"
     }
   ],
   "genero": [
