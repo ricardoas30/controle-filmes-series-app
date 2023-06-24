@@ -34,12 +34,12 @@ As seguintes ferramentas deverão ser usadas na construção do projeto:
 - [x]  Apresentar uma lista de dados com a diretiva estrutural ngFor.
 - [x]  Usar a diretiva ngIf
 - [x]  Formatar a apresentação de dados com Pipes.
-- [ ]  Build e deploy da aplicação.
+- [x]  Build e deploy da aplicação.
 
 
 ## Executando o Projeto
 
-Para rodar o projeto em ambiente web, execute o seguinte comando no terminal
+Para rodar o projeto em ambiente local web, execute o seguinte comando no terminal
 
 ```bash
   ng serve --open
@@ -50,6 +50,11 @@ Executar a API Json Server, rode o seguinte comando no terminal
 ```bash
   json-server --watch db.json
 ```
+
+
+## Acesso ao Projeto
+
+[Clique aqui](https://ricardoas30.github.io/controle-filmes-series-app/home)
 
 ## Screenshots
 
