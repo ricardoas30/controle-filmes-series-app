@@ -8,7 +8,7 @@ declare let alertify : any;
   providedIn: 'root'
 })
 export class ApiHttpService {
-  url_api: string = 'http://localhost:3000/filmes';
+  url_api: string = 'https://649585ebb08e17c917923880.mockapi.io/api/v1/filmes';
   options: string = '?_sort=assistido&_order=asc';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
