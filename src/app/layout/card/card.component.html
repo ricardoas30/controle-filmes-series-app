@@ -5,7 +5,7 @@
                 <div class="card hoverable">
                     <div class="card-image waves-effect waves-block waves-light">
                         <img class="activator tamanho-img" [src]="filme.img" *ngIf="filme.img">
-                        <img class="activator tamanho-img" src="../../../assets/images/sem-imagem.gif" *ngIf="!filme.img">
+                        <img class="activator tamanho-img" src="https://user-images.githubusercontent.com/14126452/248482484-a803cd2e-4ae0-465c-9cad-2be47bacb262.gif" *ngIf="!filme.img">
                     </div>
                     <div class="card-content">
                         <span class="card-title activator grey-text text-darken-4">
@@ -16,12 +16,12 @@
                             <p style="text-align: left; font-size: 11px;">
                                 {{filme.genero.join('/')}} | {{filme.ano}} | {{filme.pais.join('/')}}
                             </p>
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0" src="../../../assets/images/classificacao/livre-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 10" src="../../../assets/images/classificacao/10-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 12" src="../../../assets/images/classificacao/12-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 14" src="../../../assets/images/classificacao/14-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 16" src="../../../assets/images/classificacao/16-anos.png">
-                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="../../../assets/images/classificacao/18-anos.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 0"  src="https://user-images.githubusercontent.com/14126452/248482575-820ef066-e8e0-4779-b785-a74070d59c43.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 10" src="https://user-images.githubusercontent.com/14126452/248482578-c6325644-9153-46e2-8e51-c85732116b05.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 12" src="https://user-images.githubusercontent.com/14126452/248482581-627d2dc0-6d27-4835-9014-233294cdbea9.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 14" src="https://user-images.githubusercontent.com/14126452/248482583-2d91a93d-99a1-440a-9e5d-4a9ca57d3912.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 16" src="https://user-images.githubusercontent.com/14126452/248482585-08a799d9-0524-45b4-ab0b-6f2373cc573b.png">
+                            <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="https://user-images.githubusercontent.com/14126452/248482571-fa5f3134-c6d0-4280-afaf-cf081169bfb3.png">
                             
                         </span>
                         <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']" (click)="onConfirmDelete([filme.id])">Deletar</a></p>
