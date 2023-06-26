@@ -8,8 +8,9 @@
 
 main {
   display: flex;
-  min-height: 100vh;
+  min-height: 65.8vh;
   flex-direction: column;
+  flex: 1 0 auto;
 }
 .tamanho-img {
   height: 400px;
