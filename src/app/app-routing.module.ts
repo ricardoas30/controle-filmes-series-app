@@ -18,7 +18,7 @@ const routes: Routes = [
   {path: 'filme/:id', component: CardDetailComponent, canActivate: [AuthenticationGuard]},
   {path: 'delete/:id', component: CardComponent, canActivate: [AuthenticationGuard]},
   {path: 'nao-autorizado', component: NotAuthorizedComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: '**', component: NotFoundComponent}
 ];
 
