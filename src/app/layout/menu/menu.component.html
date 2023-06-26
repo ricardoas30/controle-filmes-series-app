@@ -1,5 +1,5 @@
 <div class="navbar-fixed">
-    <nav class="cor-menu">
+    <nav class="teal darken-1">
         
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
@@ -25,11 +25,11 @@
                 <i class="large material-icons">home</i>
             </a>
             
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" *ngIf="this.loggedIn">
                 <li><a [routerLink]="[dados.home.url]">{{dados.home.nome}}</a></li>
                 <li><a [routerLink]="[dados.cadastrar.url]">{{dados.cadastrar.nome}}</a></li>
                 <li><a [routerLink]="[dados.sobre.url]">{{dados.sobre.nome}}</a></li>
-                
+                <li><a (click)="onLogout()">Sair</a></li>
             </ul>
         </div>
         <!-- Fim -->

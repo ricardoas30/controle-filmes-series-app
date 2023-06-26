@@ -10,7 +10,7 @@ export class FooterComponent {
   date = new Date();
   
   dados = {
-    nome_projeto: 'Projetos',
+    nome_projeto: 'Ferramentas',
     copyright: `© Copyright 2023-${this.date.getFullYear()}, Projeto Filmes e Séries`,
     home: {
       nome: 'Home',

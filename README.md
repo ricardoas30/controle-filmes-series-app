@@ -3,19 +3,14 @@
 Objetivo desta aplicação será cadastrar, categorizar, listar e marcar a lista de filmes de um determinado usuário para seu controle pessoal.
 
 
-### 🛠Tecnologias
+## 🛠Stack utilizada
 
-As seguintes ferramentas deverão ser usadas na construção do projeto:
+**Front-end:** Angular v16.0.0, Javascript, Node.js v18.16.0, Html, CSS
 
-- [Angular](https://angular.io/)
-- [JavaScript](https://www.javascript.com/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/) 
+**Back-end:** Json Server API, Mockapi.io
 
 
-### ✨Checklist
+## ✨Checklist
 
 - [x]  Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
 - [x]  Usar componentes de algum framework CSS (Bootstrap, Materialize ou outro).
@@ -51,10 +46,9 @@ Executar a API Json Server, rode o seguinte comando no terminal
   json-server --watch db.json
 ```
 
-
 ## Acesso ao Projeto
 
-[Clique aqui](https://ricardoas30.github.io/controle-filmes-series-app/home)
+[Clique aqui](https://ricardoas30.github.io/controle-filmes-series-app)
 
 ## Screenshots
 
