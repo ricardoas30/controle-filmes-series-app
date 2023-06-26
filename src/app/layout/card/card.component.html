@@ -24,7 +24,7 @@
                             <img class="classificacao-indicativa" *ngIf="filme.classificacao == 18" src="https://user-images.githubusercontent.com/14126452/248482571-fa5f3134-c6d0-4280-afaf-cf081169bfb3.png">
                             
                         </span>
-                        <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['']" (click)="onConfirmDelete([filme.id])">Deletar</a></p>
+                        <p style="text-align: right; font-size: 12px;"><a [routerLink]="['/filme', filme.id]">Editar</a> | <a [routerLink]="['/delete', filme.id]" (click)="onConfirmDelete([filme.id])">Deletar</a></p>
                     </div>
                     <div class="card-reveal">
                         <i class="tiny material-icons left" style="margin-top: 5px;" *ngIf="filme.assistido">star</i>
