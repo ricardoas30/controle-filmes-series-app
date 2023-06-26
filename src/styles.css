@@ -8,12 +8,8 @@
 
 main {
   display: flex;
-  min-height: 65.8vh;
+  min-height: 100vh;
   flex-direction: column;
-  flex: 1 0 auto;
-}
-.cor-menu, .cor-footer, .cor-menu-lateral {
-  background-color: #032e4b;
 }
 .tamanho-img {
   height: 400px;
