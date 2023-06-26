@@ -1,51 +1,57 @@
-<div class="container">
-    <h5>Login</h5>
-    <div class="row" >
-      <div class="col s12">
-        <div id="msg-login"
-             class="card-panel red white-text"
-             style="display: none">
+  <div class="container">
+  <div class="row" style="margin-top: 110px;">
+    <div class="col s12">
+      <div class="input-field col l6 push-l3 m12 s12">
+        <h5>Login</h5>
+      </div>
+      <div id="msg-login"
+           class="card-panel red white-text"
+           style="display: none">
+      </div>
+    </div>
+    <form class="col l12 m12 s12" #loginForm="ngForm" (ngSubmit)="onLogin()">
+      <div class="row">
+        <div class="input-field col l6 push-l3 m12 s12">
+          <i class="material-icons prefix">person</i>
+          <input id="input-username"
+                 name="input-username"
+                 type="text"
+                 class="validate"
+                 #name="ngModel"
+                 [(ngModel)]="this.loginUser.username" required/>
+          <label for="input-username">Usuário</label>
         </div>
       </div>
-      <form class="col l12 m12 s12" (ngSubmit)="onLogin()">
-        <div class="row">
-          <div class="input-field col l6 push-l3 m12 s12">
-            <i class="material-icons prefix">person</i>
-            <input id="input-username"
-                   name="input-username"
-                   type="text"
-                   class="validate"
-                   [(ngModel)]="this.loginUser.username" required/>
-            <label for="input-username">Usuário</label>
+      <div class="row">
+        <div class="input-field col l6 push-l3 m12 s12">
+          <i class="material-icons prefix">lock</i>
+          <input id="input-password"
+                 name="input-password"
+                 type="password"
+                 class="validate"
+                 #name="ngModel"
+                 minlength="6"
+                 [(ngModel)]="this.loginUser.password" required/>
+          <label for="input-password">Senha</label>
+          <span class="helper-text" data-error="Atenção! mínimo de 6 caracteres" data-success="Caracteres válidos"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l12 m12 s12">
+          <div class="col l6 push-l3 m6 s6">
+            <button class="btn red lighten-2 waves-effect waves-light col l6 m12 s12" type="reset">
+              Limpar
+              <i class="material-icons right">clear</i>
+            </button> 
+          </div>
+          <div class="col l6 m6 s6">
+            <button class="btn waves-effect waves-light col l6 m12 s12" type="submit" [disabled]="!loginForm.valid">
+              Enviar
+              <i class="material-icons right">send</i>
+            </button>
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col l6 push-l3 m12 s12">
-            <i class="material-icons prefix">lock</i>
-            <input id="input-password"
-                   name="input-password"
-                   type="password"
-                   class="validate"
-                   [(ngModel)]="this.loginUser.password" required/>
-            <label for="input-password">Senha</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col l12 m12 s12">
-            <div class="col l6 push-l3 m6 s6">
-              <button class="btn red lighten-2 waves-effect waves-light col l6 m12 s12" type="reset">
-                Limpar
-                <i class="material-icons right">clear</i>
-              </button> 
-            </div>
-            <div class="col l6 m6 s6">
-              <button class="btn waves-effect waves-light col l6 m12 s12" type="submit">
-                Enviar
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
+</div>
