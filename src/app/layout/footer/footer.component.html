@@ -1,26 +1,35 @@
-<footer class="page-footer cor-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s6">
-          <ul class="left-align">
-            <h6><a class="grey-text text-lighten-3" [routerLink]="[dados.home.url]"><i class="tiny material-icons">home</i> {{dados.home.nome}}</a></h6>
-            <h6><a class="grey-text text-lighten-3" [routerLink]="[dados.sobre.url]"><i class="tiny material-icons">help</i> {{dados.sobre.nome}}</a></h6>
+<footer class="page-footer teal darken-1">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h6><a class="grey-text text-lighten-3" [routerLink]="[dados.home.url]"><i class="tiny material-icons">home</i> {{dados.home.nome}}</a></h6>
+        <h6><a class="grey-text text-lighten-3" [routerLink]="[dados.sobre.url]"><i class="tiny material-icons">help</i> {{dados.sobre.nome}}</a></h6>
+
+
+      </div>
+      <div class="col l3 s12">
+        <!-- <h5 class="white-text">{{dados.nome_projeto}}</h5> -->
+        <!-- <ul>
+          <li><a class="white-text" [href]="dados.prototipo.url" target="_blank">{{dados.prototipo.nome}}</a></li>
+          <li><a class="white-text" [href]="dados.github.url" target="_blank">{{dados.github.nome}}</a></li>
+          <li><a class="white-text" [href]="dados.bootstrap.url" target="_blank">{{dados.bootstrap.nome}}</a></li>
+          <li><a class="white-text" [href]="dados.materialize.url" target="_blank">{{dados.materialize.nome}}</a></li>
+        </ul> -->
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">{{dados.nome_projeto}}</h5>
+        <ul>
+          <li><a class="white-text" [href]="dados.prototipo.url" target="_blank">{{dados.prototipo.nome}}</a></li>
+          <li><a class="white-text" [href]="dados.github.url" target="_blank">{{dados.github.nome}}</a></li>
+          <li><a class="white-text" [href]="dados.bootstrap.url" target="_blank">{{dados.bootstrap.nome}}</a></li>
+          <li><a class="white-text" [href]="dados.materialize.url" target="_blank">{{dados.materialize.nome}}</a></li>
         </ul>
-        </div>
-        <div class="col l6 s6">
-          <h5 class="white-text right-align">{{dados.nome_projeto}}</h5>
-          <ul class="right-align">
-            <li><a class="grey-text text-lighten-3" [href]="dados.prototipo.url" target="_blank">{{dados.prototipo.nome}}</a></li>
-            <li><a class="grey-text text-lighten-3" [href]="dados.github.url" target="_blank">{{dados.github.nome}}</a></li>
-            <li><a class="grey-text text-lighten-3" [href]="dados.bootstrap.url" target="_blank">{{dados.bootstrap.nome}}</a></li>
-            <li><a class="grey-text text-lighten-3" [href]="dados.materialize.url" target="_blank">{{dados.materialize.nome}}</a></li>
-          </ul>
-        </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container center-align">
-        {{dados.copyright}}
-      </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container center-align">
+      {{dados.copyright}}
     </div>
+  </div>
 </footer>

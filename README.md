@@ -51,6 +51,12 @@ Executar a API Json Server, rode o seguinte comando no terminal
   json-server --watch db.json
 ```
 
+## Versões utilizadas
+
+```bash
+  NodeJS v18.16.0 | Angular v16.0.0
+```
+
 
 ## Acesso ao Projeto
 
