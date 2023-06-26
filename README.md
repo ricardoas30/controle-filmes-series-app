@@ -5,12 +5,12 @@ Objetivo desta aplicação será cadastrar, categorizar, listar e marcar a lista
 
 ## 🛠Stack utilizada
 
-**Front-end:** Angular, Javascript, Node.js, Html, CSS
+**Front-end:** Angular v16.0.0, Javascript, Node.js v18.16.0, Html, CSS
 
 **Back-end:** Json Server API, Mockapi.io
 
 
-### ✨Checklist
+## ✨Checklist
 
 - [x]  Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
 - [x]  Usar componentes de algum framework CSS (Bootstrap, Materialize ou outro).
@@ -45,12 +45,6 @@ Executar a API Json Server, rode o seguinte comando no terminal
 ```bash
   json-server --watch db.json
 ```
-
-## Versões utilizadas
-
-- Node.js v18.16.0
-- Angular v16.0.0
-
 
 ## Acesso ao Projeto
 
