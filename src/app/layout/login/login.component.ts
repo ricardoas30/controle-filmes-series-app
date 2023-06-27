@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
       this.loginUser.password === this.user.password      
     ) {
       this.loginService.login();
-      this.router.navigate(['/home']);
+      this.router.navigate(['home']);
     } else {
       alertify.error('Atenção, verifique seu usuário e senha !')
     }
