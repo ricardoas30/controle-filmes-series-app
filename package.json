@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href=/controle-filmes-series-app/ --source-map",
+    "build": "ng build --configuration production --base-href=/controle-filmes-series-app/ --source-map",
     "ghpages": "angular-cli-ghpages --no-silent --dir=dist/controle-filmes-series-app",
     "deploy": "npm run build & npm run ghpages",
     "watch": "ng build --watch --configuration development",
