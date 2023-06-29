@@ -9,7 +9,7 @@ import { Pais } from '../model/pais';
   providedIn: 'root'
 })
 export class ComboboxHttpService {
-  url_api: string = 'http://ec2-3-12-132-227.us-east-2.compute.amazonaws.com:8080';
+  url_api: string = 'http://localhost:3000';
   options: string = '?_sort=descricao&_order=asc';
   url_class  = 'classificacao';
   url_genero = 'genero';
