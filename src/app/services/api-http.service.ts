@@ -8,7 +8,7 @@ declare let alertify : any;
   providedIn: 'root'
 })
 export class ApiHttpService {
-  url_api: string = 'http://ec2-3-12-132-227.us-east-2.compute.amazonaws.com:8080/filmes';
+  url_api: string = 'http://localhost:3000/filmes';
   options: string = '?_sort=assistido&_order=asc';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
