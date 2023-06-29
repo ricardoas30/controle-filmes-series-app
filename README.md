@@ -5,9 +5,9 @@ Objetivo desta aplicação será cadastrar, categorizar, listar e marcar a lista
 
 ## 🛠Stack utilizada
 
-**Front-end:** Angular v16.0.0, Javascript, Node.js v18.16.0, Html, CSS
+**Front-end:** Angular v16.0.0, TypeScript, Node.js v18.16.0, Html, CSS
 
-**Back-end:** Json Server API, Mockapi.io
+**Back-end:** Json Server API
 
 
 ## ✨Checklist
@@ -34,7 +34,7 @@ Objetivo desta aplicação será cadastrar, categorizar, listar e marcar a lista
 
 ## Executando o Projeto
 
-Para rodar o projeto em ambiente local web, execute o seguinte comando no terminal
+Para rodar o projeto web localmente, execute o seguinte comando no terminal
 
 ```bash
   ng serve --open
@@ -43,12 +43,12 @@ Para rodar o projeto em ambiente local web, execute o seguinte comando no termin
 Executar a API Json Server, rode o seguinte comando no terminal
 
 ```bash
-  json-server --watch db.json
+  json-server --watch db.json --routes routes.json
 ```
 
 ## Acesso ao Projeto
 
-[Clique aqui](https://ricardoas30.github.io/controle-filmes-series-app)
+[Acesso ao Filmes App](https://ricardoas30.github.io/controle-filmes-series-app)
 
 ## Screenshots
 
