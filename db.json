@@ -174,7 +174,7 @@
       "pais": [
         "EUA"
       ],
-      "img": "https://filmesmega.co/wp-content/uploads/2022/08/Encontro-Marcado-300x450.jpg",
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1688130880/Encontro-Marcado-300x450_myfxma.jpg",
       "id": 10
     },
     {
@@ -192,7 +192,7 @@
       "pais": [
         "EUA"
       ],
-      "img": "https://filmesmega.co/wp-content/uploads/2022/07/Titanic-300x450.jpg",
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1688130916/Titanic-300x450_tu6hzl.jpg",
       "id": 11
     },
     {
@@ -208,7 +208,7 @@
       "pais": [
         "EUA"
       ],
-      "img": "https://br.web.img3.acsta.net/c_310_420/pictures/18/06/06/19/11/3472306.jpg",
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1688130931/3472306_oxdbpj.jpg",
       "createdAt": "6/24/23, 2:28 AM",
       "id": 12
     },
@@ -225,7 +225,7 @@
       "pais": [
         "EUA"
       ],
-      "img": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/82/78/20359454.jpg",
+      "img": "https://res.cloudinary.com/du7q7wpps/image/upload/v1688130953/20359454_gbig2k.jpg",
       "createdAt": "6/24/23, 2:36 AM",
       "id": 13
     }
@@ -234,32 +234,32 @@
     {
       "id": 0,
       "descricao": "Livre",
-      "imagemUrl": "https://user-images.githubusercontent.com/14126452/248482575-820ef066-e8e0-4779-b785-a74070d59c43.png"
+      "imagemUrl": "assets/images/classificacao/livre-anos.png"
     },
     {
       "id": 10,
       "descricao": "10 anos",
-      "imagemUrl": "https://user-images.githubusercontent.com/14126452/248482578-c6325644-9153-46e2-8e51-c85732116b05.png"
+      "imagemUrl": "assets/images/classificacao/10-anos.png"
     },
     {
       "id": 12,
       "descricao": "12 anos",
-      "imagemUrl": "https://user-images.githubusercontent.com/14126452/248482581-627d2dc0-6d27-4835-9014-233294cdbea9.png"
+      "imagemUrl": "assets/images/classificacao/12-anos.png"
     },
     {
       "id": 14,
       "descricao": "14 anos",
-      "imagemUrl": "https://user-images.githubusercontent.com/14126452/248482583-2d91a93d-99a1-440a-9e5d-4a9ca57d3912.png"
+      "imagemUrl": "assets/images/classificacao/14-anos.png"
     },
     {
       "id": 16,
       "descricao": "16 anos",
-      "imagemUrl": "https://user-images.githubusercontent.com/14126452/248482585-08a799d9-0524-45b4-ab0b-6f2373cc573b.png"
+      "imagemUrl": "assets/images/classificacao/16-anos.png"
     },
     {
       "id": 18,
       "descricao": "18 anos",
-      "imagemUrl": "https://user-images.githubusercontent.com/14126452/248482571-fa5f3134-c6d0-4280-afaf-cf081169bfb3.png"
+      "imagemUrl": "assets/images/classificacao/18-anos.png"
     }
   ],
   "genero": [
