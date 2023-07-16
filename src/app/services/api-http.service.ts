@@ -8,7 +8,8 @@ declare let alertify : any;
   providedIn: 'root'
 })
 export class ApiHttpService {
-  url_api: string = 'http://localhost:3000/filmes';
+  // url_api: string = 'http://localhost:3000/filmes';
+  url_api: string = 'https://my-json-server.typicode.com/ricardoas30/Filme-Rest-Git/filmes';
   options: string = '?_sort=assistido&_order=asc';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
