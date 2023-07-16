@@ -19,7 +19,7 @@
                  class="validate"
                  #name="ngModel"
                  [(ngModel)]="this.loginUser.username" required/>
-          <label for="input-username">Usuário</label>
+          <label for="input-username">Usuário : Admin</label>
         </div>
       </div>
       <div class="row">
@@ -30,9 +30,9 @@
                  type="password"
                  class="validate"
                  #name="ngModel"
-                 minlength="6"
+                 minlength="4"
                  [(ngModel)]="this.loginUser.password" required/>
-          <label for="input-password">Senha</label>
+          <label for="input-password">Senha : demo</label>
           <span class="helper-text" data-error="Atenção! mínimo de 6 caracteres" data-success="Caracteres válidos"></span>
         </div>
       </div>
