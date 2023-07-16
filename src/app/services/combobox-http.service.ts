@@ -9,7 +9,8 @@ import { Pais } from '../model/pais';
   providedIn: 'root'
 })
 export class ComboboxHttpService {
-  url_api: string = 'http://localhost:3000';
+  // url_api: string = 'http://localhost:3000';
+  url_api: string = 'https://my-json-server.typicode.com/ricardoas30/Filme-Rest-Git';
   options: string = '?_sort=descricao&_order=asc';
   url_class  = 'classificacao';
   url_genero = 'genero';
